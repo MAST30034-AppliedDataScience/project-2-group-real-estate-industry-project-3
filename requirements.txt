@@ -5,3 +5,9 @@ requests
 pyspark
 pandas
 openpyxl
+geopandas
+folium
+matplotlib
+seaborn
+pyarrow
+fastparquet
