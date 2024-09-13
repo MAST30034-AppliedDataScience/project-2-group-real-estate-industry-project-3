@@ -1,3 +1,7 @@
 tqdm
 bs4
 lxml
+requests
+pyspark
+pandas
+openpyxl

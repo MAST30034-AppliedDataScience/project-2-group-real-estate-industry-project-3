@@ -1,3 +1,5 @@
+# NO LONGER USED
+
 from bs4 import BeautifulSoup
 from urllib.request import urlopen, Request
 from tqdm import tqdm
@@ -20,8 +22,20 @@ def get_specific_prop(element, c):
         return None
 
 
-def scrape_suburb(url):
-    url, last_page = url
+def get_history(element):
+    hist_dict = []
+    for row in element.find_all("li"):
+        try:
+            print(row.text)
+            date, price = row.text.split("$")
+            hist_dict.append({"date": date, "price": price})
+        except Exception as e:
+            print(f"Error: {e}")
+    return hist_dict
+
+
+def scrape_suburb(suburb):
+    url, last_page = suburb
     print(f"Scraping {url}")
     property_metadata = []
 
@@ -38,6 +52,8 @@ def scrape_suburb(url):
                     "bath": get_specific_prop(prop, "bath"),
                     "car": get_specific_prop(prop, "car"),
                     "type": get_specific_prop(prop, "type"),
+                    "postcode": url.split("/")[-3],
+                    "history": get_history(prop.findNext("section", {"class": "historical-price"}))
                 }
                 property_metadata.append(list(prop_details.values()))
             except Exception as e:

@@ -133,6 +133,7 @@ data/curated/
 data/raw/
 data/landing/
 scrape_data/
+scrape_data.zip
 
 # OSX .DS_Store file
 .DS_Store

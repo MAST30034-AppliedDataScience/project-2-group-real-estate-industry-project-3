@@ -1,3 +1,5 @@
+# NO LONGER USED
+
 BASE_URL = 'https://www.oldlistings.com.au'
 from bs4 import BeautifulSoup
 from urllib.request import urlopen, Request
