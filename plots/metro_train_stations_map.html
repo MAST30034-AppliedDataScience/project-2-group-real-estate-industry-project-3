@@ -1,0 +1,4703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bb00cfbb1909c7e98e03f1e0a5582d62 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bb00cfbb1909c7e98e03f1e0a5582d62" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bb00cfbb1909c7e98e03f1e0a5582d62 = L.map(
+                "map_bb00cfbb1909c7e98e03f1e0a5582d62",
+                {
+                    center: [-37.85237782876998, 145.045691471389],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e42e1a907614814ad6412ece58159d6e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_e42e1a907614814ad6412ece58159d6e.addTo(map_bb00cfbb1909c7e98e03f1e0a5582d62);
+        
+    
+            var marker_cluster_316d3c380207e4a2bb46736a6fdca771 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_975a0253c272627357e9af21567543a3 = L.marker(
+                [-37.7811929725527, 144.95230120580877],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_0156d32b7e754a9cb6fc2a30d9872634 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9ce32b9049ab49ea42c8089737e0f93 = $(`<div id="html_b9ce32b9049ab49ea42c8089737e0f93" style="width: 100.0%; height: 100.0%;">Train Station: Royal Park Railway Station (Parkville) (Stop ID: 19970)</div>`)[0];
+                popup_0156d32b7e754a9cb6fc2a30d9872634.setContent(html_b9ce32b9049ab49ea42c8089737e0f93);
+            
+        
+
+        marker_975a0253c272627357e9af21567543a3.bindPopup(popup_0156d32b7e754a9cb6fc2a30d9872634)
+        ;
+
+        
+    
+    
+            var marker_7caf240a5d8321657d3564c65d60a5fa = L.marker(
+                [-37.788139984393844, 144.93932321237276],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f2bedd34af48585a69103e111ddccc66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3699863e447f2af255a5d4aecede8f2 = $(`<div id="html_e3699863e447f2af255a5d4aecede8f2" style="width: 100.0%; height: 100.0%;">Train Station: Flemington Bridge Railway Station (North Melbourne) (Stop ID: 19971)</div>`)[0];
+                popup_f2bedd34af48585a69103e111ddccc66.setContent(html_e3699863e447f2af255a5d4aecede8f2);
+            
+        
+
+        marker_7caf240a5d8321657d3564c65d60a5fa.bindPopup(popup_f2bedd34af48585a69103e111ddccc66)
+        ;
+
+        
+    
+    
+            var marker_3d1b4557bdeaf9c4d36b32138ab41861 = L.marker(
+                [-37.79426700459872, 144.93616600406753],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_836c2b0db13eb88e3cf214dcea2bc470 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c10d082088c2c7d3c96284c6468941fd = $(`<div id="html_c10d082088c2c7d3c96284c6468941fd" style="width: 100.0%; height: 100.0%;">Train Station: Macaulay Railway Station (North Melbourne) (Stop ID: 19972)</div>`)[0];
+                popup_836c2b0db13eb88e3cf214dcea2bc470.setContent(html_c10d082088c2c7d3c96284c6468941fd);
+            
+        
+
+        marker_3d1b4557bdeaf9c4d36b32138ab41861.bindPopup(popup_836c2b0db13eb88e3cf214dcea2bc470)
+        ;
+
+        
+    
+    
+            var marker_60f99b3c4ed8c63a6d20a16dee2726f9 = L.marker(
+                [-37.80741897361899, 144.94257002890663],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_750db64856d4fd3093e157bf41e7271e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7f18aff49e712d5f3bf2a540c8bc252a = $(`<div id="html_7f18aff49e712d5f3bf2a540c8bc252a" style="width: 100.0%; height: 100.0%;">Train Station: North Melbourne Railway Station (West Melbourne) (Stop ID: 19973)</div>`)[0];
+                popup_750db64856d4fd3093e157bf41e7271e.setContent(html_7f18aff49e712d5f3bf2a540c8bc252a);
+            
+        
+
+        marker_60f99b3c4ed8c63a6d20a16dee2726f9.bindPopup(popup_750db64856d4fd3093e157bf41e7271e)
+        ;
+
+        
+    
+    
+            var marker_974e99bcdd94212ccf12a66544bbc932 = L.marker(
+                [-37.78865703363607, 144.9954169601631],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_1e521e3f636e8a52ea0d86ef1b98d678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ffe4ab6a384bef5d4f647d2f4dca9a3 = $(`<div id="html_5ffe4ab6a384bef5d4f647d2f4dca9a3" style="width: 100.0%; height: 100.0%;">Train Station: Clifton Hill Railway Station (Clifton Hill) (Stop ID: 19974)</div>`)[0];
+                popup_1e521e3f636e8a52ea0d86ef1b98d678.setContent(html_5ffe4ab6a384bef5d4f647d2f4dca9a3);
+            
+        
+
+        marker_974e99bcdd94212ccf12a66544bbc932.bindPopup(popup_1e521e3f636e8a52ea0d86ef1b98d678)
+        ;
+
+        
+    
+    
+            var marker_cbeebda55074ac9ebbb24b0b344eb45c = L.marker(
+                [-37.79915796626723, 144.9944510689111],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8654a3bc9a98bcaa0fe3b8806f4abf03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19c77f24ee373c29628edd2b7e2a7780 = $(`<div id="html_19c77f24ee373c29628edd2b7e2a7780" style="width: 100.0%; height: 100.0%;">Train Station: Victoria Park Railway Station (Abbotsford) (Stop ID: 19975)</div>`)[0];
+                popup_8654a3bc9a98bcaa0fe3b8806f4abf03.setContent(html_19c77f24ee373c29628edd2b7e2a7780);
+            
+        
+
+        marker_cbeebda55074ac9ebbb24b0b344eb45c.bindPopup(popup_8654a3bc9a98bcaa0fe3b8806f4abf03)
+        ;
+
+        
+    
+    
+            var marker_8ebf7d2777fba3c3800de0c9f8dc51b3 = L.marker(
+                [-37.80452601640281, 144.99375014165992],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_94d8079731ccae1402583940253ebee3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7115d8646b958b8495288e8df8401959 = $(`<div id="html_7115d8646b958b8495288e8df8401959" style="width: 100.0%; height: 100.0%;">Train Station: Collingwood Railway Station (Abbotsford) (Stop ID: 19976)</div>`)[0];
+                popup_94d8079731ccae1402583940253ebee3.setContent(html_7115d8646b958b8495288e8df8401959);
+            
+        
+
+        marker_8ebf7d2777fba3c3800de0c9f8dc51b3.bindPopup(popup_94d8079731ccae1402583940253ebee3)
+        ;
+
+        
+    
+    
+            var marker_e1aa9d8b0bfaa34989eb553e88285e66 = L.marker(
+                [-37.8103979761548, 144.9924998535909],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3b8481b099ecb567c5070410aaa07c20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80ffd0b7cc073623f2a033e9a22289cf = $(`<div id="html_80ffd0b7cc073623f2a033e9a22289cf" style="width: 100.0%; height: 100.0%;">Train Station: North Richmond Railway Station (Richmond) (Stop ID: 19977)</div>`)[0];
+                popup_3b8481b099ecb567c5070410aaa07c20.setContent(html_80ffd0b7cc073623f2a033e9a22289cf);
+            
+        
+
+        marker_e1aa9d8b0bfaa34989eb553e88285e66.bindPopup(popup_3b8481b099ecb567c5070410aaa07c20)
+        ;
+
+        
+    
+    
+            var marker_6bad8bb0a9c7cb77c0dc2987f9eefee3 = L.marker(
+                [-37.81494900584843, 144.991423087592],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f409f3fd6397173fe8c8c284d0061e61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_115de8bca978fa2e4b019e3bfc6ecb22 = $(`<div id="html_115de8bca978fa2e4b019e3bfc6ecb22" style="width: 100.0%; height: 100.0%;">Train Station: West Richmond Railway Station (Richmond) (Stop ID: 19978)</div>`)[0];
+                popup_f409f3fd6397173fe8c8c284d0061e61.setContent(html_115de8bca978fa2e4b019e3bfc6ecb22);
+            
+        
+
+        marker_6bad8bb0a9c7cb77c0dc2987f9eefee3.bindPopup(popup_f409f3fd6397173fe8c8c284d0061e61)
+        ;
+
+        
+    
+    
+            var marker_9857fc0f3e83ad3018180fcd9679bb4f = L.marker(
+                [-37.816526974237526, 144.9840981689869],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3fbd8341852776eff13a8c50897713ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd621886657bff12ebff0a0ce40fa730 = $(`<div id="html_fd621886657bff12ebff0a0ce40fa730" style="width: 100.0%; height: 100.0%;">Train Station: Jolimont-MCG Railway Station (East Melbourne) (Stop ID: 19979)</div>`)[0];
+                popup_3fbd8341852776eff13a8c50897713ce.setContent(html_fd621886657bff12ebff0a0ce40fa730);
+            
+        
+
+        marker_9857fc0f3e83ad3018180fcd9679bb4f.bindPopup(popup_3fbd8341852776eff13a8c50897713ce)
+        ;
+
+        
+    
+    
+            var marker_d2152da04a298edef1e3a3fa433f7199 = L.marker(
+                [-37.72601198852847, 145.06914313196347],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a00a01876b398caae2a4278a35c8922e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c634c0886d55d12dae516412e358efc = $(`<div id="html_8c634c0886d55d12dae516412e358efc" style="width: 100.0%; height: 100.0%;">Train Station: Macleod Railway Station (Macleod) (Stop ID: 19983)</div>`)[0];
+                popup_a00a01876b398caae2a4278a35c8922e.setContent(html_8c634c0886d55d12dae516412e358efc);
+            
+        
+
+        marker_d2152da04a298edef1e3a3fa433f7199.bindPopup(popup_a00a01876b398caae2a4278a35c8922e)
+        ;
+
+        
+    
+    
+            var marker_a140c564beea71c2f2fa066521698b28 = L.marker(
+                [-37.71095796058549, 145.08379299256393],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9cdfd9237e95099820b89db63fa4acc4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8710815ed139afad0cab3f6ea0f8bd48 = $(`<div id="html_8710815ed139afad0cab3f6ea0f8bd48" style="width: 100.0%; height: 100.0%;">Train Station: Watsonia Railway Station (Watsonia) (Stop ID: 19984)</div>`)[0];
+                popup_9cdfd9237e95099820b89db63fa4acc4.setContent(html_8710815ed139afad0cab3f6ea0f8bd48);
+            
+        
+
+        marker_a140c564beea71c2f2fa066521698b28.bindPopup(popup_9cdfd9237e95099820b89db63fa4acc4)
+        ;
+
+        
+    
+    
+            var marker_e31fde4ae7bfc604701fd6bc1c2040b6 = L.marker(
+                [-37.703953978517774, 145.10824705206068],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_bdb13e94b417440972cd2ac0cd979b88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_222cc3fa04bf61f94f44cb4d789cefce = $(`<div id="html_222cc3fa04bf61f94f44cb4d789cefce" style="width: 100.0%; height: 100.0%;">Train Station: Greensborough Railway Station (Greensborough) (Stop ID: 19985)</div>`)[0];
+                popup_bdb13e94b417440972cd2ac0cd979b88.setContent(html_222cc3fa04bf61f94f44cb4d789cefce);
+            
+        
+
+        marker_e31fde4ae7bfc604701fd6bc1c2040b6.bindPopup(popup_bdb13e94b417440972cd2ac0cd979b88)
+        ;
+
+        
+    
+    
+            var marker_98eaa18b4e23c534ea932b4c4aa20041 = L.marker(
+                [-37.715295960542775, 145.121515927139],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_fcf84f22ba8c333a8728d0670b25f14b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb910354778695f026cab6fe893c82ef = $(`<div id="html_eb910354778695f026cab6fe893c82ef" style="width: 100.0%; height: 100.0%;">Train Station: Montmorency Railway Station (Montmorency) (Stop ID: 19986)</div>`)[0];
+                popup_fcf84f22ba8c333a8728d0670b25f14b.setContent(html_eb910354778695f026cab6fe893c82ef);
+            
+        
+
+        marker_98eaa18b4e23c534ea932b4c4aa20041.bindPopup(popup_fcf84f22ba8c333a8728d0670b25f14b)
+        ;
+
+        
+    
+    
+            var marker_513a04ae9516f4bdda067e5375704dfe = L.marker(
+                [-37.71354996061303, 145.14782184864805],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9507efa55cd7f130fb198c24f6c242b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8df2420fca64ee68edab5ae5a7c8a311 = $(`<div id="html_8df2420fca64ee68edab5ae5a7c8a311" style="width: 100.0%; height: 100.0%;">Train Station: Eltham Railway Station (Eltham) (Stop ID: 19987)</div>`)[0];
+                popup_9507efa55cd7f130fb198c24f6c242b6.setContent(html_8df2420fca64ee68edab5ae5a7c8a311);
+            
+        
+
+        marker_513a04ae9516f4bdda067e5375704dfe.bindPopup(popup_9507efa55cd7f130fb198c24f6c242b6)
+        ;
+
+        
+    
+    
+            var marker_55797dea6799ec78d852bd85a37a3642 = L.marker(
+                [-37.67329701063555, 145.1585059320563],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_01266dca303a2d06c266a3eb5aaab450 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2d5672c8991d6646a9b59ab1391dca3 = $(`<div id="html_a2d5672c8991d6646a9b59ab1391dca3" style="width: 100.0%; height: 100.0%;">Train Station: Diamond Creek Railway Station (Diamond Creek) (Stop ID: 19988)</div>`)[0];
+                popup_01266dca303a2d06c266a3eb5aaab450.setContent(html_a2d5672c8991d6646a9b59ab1391dca3);
+            
+        
+
+        marker_55797dea6799ec78d852bd85a37a3642.bindPopup(popup_01266dca303a2d06c266a3eb5aaab450)
+        ;
+
+        
+    
+    
+            var marker_c31385c7ba17c6e2332dad1b93993a43 = L.marker(
+                [-37.66396797039701, 145.18161506467828],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_4b1a0491be3ac4c6f93332d8ecb12185 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f07f20dbcd951b6836aa51e13eefa9e = $(`<div id="html_0f07f20dbcd951b6836aa51e13eefa9e" style="width: 100.0%; height: 100.0%;">Train Station: Wattle Glen Railway Station (Wattle Glen) (Stop ID: 19989)</div>`)[0];
+                popup_4b1a0491be3ac4c6f93332d8ecb12185.setContent(html_0f07f20dbcd951b6836aa51e13eefa9e);
+            
+        
+
+        marker_c31385c7ba17c6e2332dad1b93993a43.bindPopup(popup_4b1a0491be3ac4c6f93332d8ecb12185)
+        ;
+
+        
+    
+    
+            var marker_463a4927dc4c33c0b4f6cfbe788a505d = L.marker(
+                [-37.639397969862365, 145.1920168942208],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_72d6249b79f107746105f227d1a374ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cacdbb7e1a6b3369f9ad3c3f543d0bb = $(`<div id="html_8cacdbb7e1a6b3369f9ad3c3f543d0bb" style="width: 100.0%; height: 100.0%;">Train Station: Hurstbridge Railway Station (Hurstbridge) (Stop ID: 19990)</div>`)[0];
+                popup_72d6249b79f107746105f227d1a374ef.setContent(html_8cacdbb7e1a6b3369f9ad3c3f543d0bb);
+            
+        
+
+        marker_463a4927dc4c33c0b4f6cfbe788a505d.bindPopup(popup_72d6249b79f107746105f227d1a374ef)
+        ;
+
+        
+    
+    
+            var marker_bad0ef9bf433584b476ec9ae623d8ffd = L.marker(
+                [-37.867752990404725, 144.90532295721854],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ae3045e170bff6419d41afc7307b86b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40c308a45658e4e50b8a56c6fa574762 = $(`<div id="html_40c308a45658e4e50b8a56c6fa574762" style="width: 100.0%; height: 100.0%;">Train Station: Williamstown Railway Station (Williamstown) (Stop ID: 19991)</div>`)[0];
+                popup_ae3045e170bff6419d41afc7307b86b2.setContent(html_40c308a45658e4e50b8a56c6fa574762);
+            
+        
+
+        marker_bad0ef9bf433584b476ec9ae623d8ffd.bindPopup(popup_ae3045e170bff6419d41afc7307b86b2)
+        ;
+
+        
+    
+    
+            var marker_e97417055c927232f3f5147810268358 = L.marker(
+                [-37.86398198938481, 144.89448409561462],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_853bd3ff741077cf389adbe35224dd9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc6a24c6fee67659e5a6fcd1ec723a8f = $(`<div id="html_cc6a24c6fee67659e5a6fcd1ec723a8f" style="width: 100.0%; height: 100.0%;">Train Station: Williamstown Beach Railway Station (Williamstown) (Stop ID: 19992)</div>`)[0];
+                popup_853bd3ff741077cf389adbe35224dd9e.setContent(html_cc6a24c6fee67659e5a6fcd1ec723a8f);
+            
+        
+
+        marker_e97417055c927232f3f5147810268358.bindPopup(popup_853bd3ff741077cf389adbe35224dd9e)
+        ;
+
+        
+    
+    
+            var marker_6390435e7f80642c3f32e597e26d5cce = L.marker(
+                [-37.85733296977821, 144.88906897782545],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_66c7a38a40a28e0c1deedec491446af5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb238b74b0e6943c1a4fd25cd1f6989e = $(`<div id="html_cb238b74b0e6943c1a4fd25cd1f6989e" style="width: 100.0%; height: 100.0%;">Train Station: North Williamstown Railway Station (Williamstown) (Stop ID: 19993)</div>`)[0];
+                popup_66c7a38a40a28e0c1deedec491446af5.setContent(html_cb238b74b0e6943c1a4fd25cd1f6989e);
+            
+        
+
+        marker_6390435e7f80642c3f32e597e26d5cce.bindPopup(popup_66c7a38a40a28e0c1deedec491446af5)
+        ;
+
+        
+    
+    
+            var marker_582f3eb4cb0409e4053c660cde0d5087 = L.marker(
+                [-37.84271796018809, 144.88359986187862],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_357b30855c0294a52ad4b2b192117e15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adcbb0c519b60e169e3409e4f1b36262 = $(`<div id="html_adcbb0c519b60e169e3409e4f1b36262" style="width: 100.0%; height: 100.0%;">Train Station: Newport Railway Station (Newport) (Stop ID: 19994)</div>`)[0];
+                popup_357b30855c0294a52ad4b2b192117e15.setContent(html_adcbb0c519b60e169e3409e4f1b36262);
+            
+        
+
+        marker_582f3eb4cb0409e4053c660cde0d5087.bindPopup(popup_357b30855c0294a52ad4b2b192117e15)
+        ;
+
+        
+    
+    
+            var marker_7b8dc53148a715fefc0663dc323e89b9 = L.marker(
+                [-37.83063897072853, 144.8859330113764],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_0bebdf35b67db6848bac70e36370bcfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfdadbb19cda1059976eaea65c453da3 = $(`<div id="html_dfdadbb19cda1059976eaea65c453da3" style="width: 100.0%; height: 100.0%;">Train Station: Spotswood Railway Station (Spotswood) (Stop ID: 19995)</div>`)[0];
+                popup_0bebdf35b67db6848bac70e36370bcfc.setContent(html_dfdadbb19cda1059976eaea65c453da3);
+            
+        
+
+        marker_7b8dc53148a715fefc0663dc323e89b9.bindPopup(popup_0bebdf35b67db6848bac70e36370bcfc)
+        ;
+
+        
+    
+    
+            var marker_8173631d514e2c1c0461784bd60514a7 = L.marker(
+                [-37.815849989791694, 144.8899340507632],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b0bdd817cc385d9f99dd404db5eec3b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_334e2e21ede693d4f1025c22351ebeef = $(`<div id="html_334e2e21ede693d4f1025c22351ebeef" style="width: 100.0%; height: 100.0%;">Train Station: Yarraville Railway Station (Yarraville) (Stop ID: 19996)</div>`)[0];
+                popup_b0bdd817cc385d9f99dd404db5eec3b9.setContent(html_334e2e21ede693d4f1025c22351ebeef);
+            
+        
+
+        marker_8173631d514e2c1c0461784bd60514a7.bindPopup(popup_b0bdd817cc385d9f99dd404db5eec3b9)
+        ;
+
+        
+    
+    
+            var marker_d07f4d5099a705c25c6847819676079d = L.marker(
+                [-37.809005040754464, 144.89567208120746],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_79595440ed555c5e6562cb00e14cb49a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7bec2a1529a3065be6d5652307583d27 = $(`<div id="html_7bec2a1529a3065be6d5652307583d27" style="width: 100.0%; height: 100.0%;">Train Station: Seddon Railway Station (Seddon) (Stop ID: 19997)</div>`)[0];
+                popup_79595440ed555c5e6562cb00e14cb49a.setContent(html_7bec2a1529a3065be6d5652307583d27);
+            
+        
+
+        marker_d07f4d5099a705c25c6847819676079d.bindPopup(popup_79595440ed555c5e6562cb00e14cb49a)
+        ;
+
+        
+    
+    
+            var marker_158d894cb64cb1131eee6a063327b594 = L.marker(
+                [-37.70112896819069, 144.77418001840798],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_04eba532be383830ad81244bf08af6a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_127ce0ac441d99767a613748d10015e2 = $(`<div id="html_127ce0ac441d99767a613748d10015e2" style="width: 100.0%; height: 100.0%;">Train Station: Watergardens Railway Station (Sydenham) (Stop ID: 20000)</div>`)[0];
+                popup_04eba532be383830ad81244bf08af6a0.setContent(html_127ce0ac441d99767a613748d10015e2);
+            
+        
+
+        marker_158d894cb64cb1131eee6a063327b594.bindPopup(popup_04eba532be383830ad81244bf08af6a0)
+        ;
+
+        
+    
+    
+            var marker_f9975294344bd901904e1fdbdc80531a = L.marker(
+                [-37.72927898714574, 144.79373809136527],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_adcfa1c082ab0fad5248acddd32cd615 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9cf7c67e2aac2c2e85d61a1b1bcf280 = $(`<div id="html_c9cf7c67e2aac2c2e85d61a1b1bcf280" style="width: 100.0%; height: 100.0%;">Train Station: Keilor Plains Railway Station (St Albans) (Stop ID: 20001)</div>`)[0];
+                popup_adcfa1c082ab0fad5248acddd32cd615.setContent(html_c9cf7c67e2aac2c2e85d61a1b1bcf280);
+            
+        
+
+        marker_f9975294344bd901904e1fdbdc80531a.bindPopup(popup_adcfa1c082ab0fad5248acddd32cd615)
+        ;
+
+        
+    
+    
+            var marker_5e9b34993bc1552922ee3aa0746948e7 = L.marker(
+                [-37.74486095681743, 144.8000499727449],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9a490e4984fabac701e5f88a148e05ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c76b9a4aa14f16fb6dc898bb6b5a373 = $(`<div id="html_4c76b9a4aa14f16fb6dc898bb6b5a373" style="width: 100.0%; height: 100.0%;">Train Station: St Albans Railway Station (St Albans) (Stop ID: 20002)</div>`)[0];
+                popup_9a490e4984fabac701e5f88a148e05ac.setContent(html_4c76b9a4aa14f16fb6dc898bb6b5a373);
+            
+        
+
+        marker_5e9b34993bc1552922ee3aa0746948e7.bindPopup(popup_9a490e4984fabac701e5f88a148e05ac)
+        ;
+
+        
+    
+    
+            var marker_dc5a8759c91284cbded649c3f8751320 = L.marker(
+                [-37.76006699999778, 144.81134785114367],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9b82102adcb1769a8135e7ac789ced40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66349dcc22c3722ad45346c345e6edfb = $(`<div id="html_66349dcc22c3722ad45346c345e6edfb" style="width: 100.0%; height: 100.0%;">Train Station: Ginifer Railway Station (St Albans) (Stop ID: 20003)</div>`)[0];
+                popup_9b82102adcb1769a8135e7ac789ced40.setContent(html_66349dcc22c3722ad45346c345e6edfb);
+            
+        
+
+        marker_dc5a8759c91284cbded649c3f8751320.bindPopup(popup_9b82102adcb1769a8135e7ac789ced40)
+        ;
+
+        
+    
+    
+            var marker_b0227cc230b6c8aee4f8e1cd86e0d16c = L.marker(
+                [-37.77765299958764, 144.82470386247024],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_19cfe2ff9642e5391da4e63299302e85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32cd8bf2a3a6691f10dd21bd381f730e = $(`<div id="html_32cd8bf2a3a6691f10dd21bd381f730e" style="width: 100.0%; height: 100.0%;">Train Station: Albion Railway Station (Sunshine North) (Stop ID: 20004)</div>`)[0];
+                popup_19cfe2ff9642e5391da4e63299302e85.setContent(html_32cd8bf2a3a6691f10dd21bd381f730e);
+            
+        
+
+        marker_b0227cc230b6c8aee4f8e1cd86e0d16c.bindPopup(popup_19cfe2ff9642e5391da4e63299302e85)
+        ;
+
+        
+    
+    
+            var marker_99815e87fa00181f52be77c16bef649e = L.marker(
+                [-37.65218696812649, 145.03106807483192],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_7d3ee45e0ee1d673162f2f5947d0ac82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4c61f5a155b187b6ab2b75fff827c2f = $(`<div id="html_c4c61f5a155b187b6ab2b75fff827c2f" style="width: 100.0%; height: 100.0%;">Train Station: Epping Railway Station (Epping) (Stop ID: 20005)</div>`)[0];
+                popup_7d3ee45e0ee1d673162f2f5947d0ac82.setContent(html_c4c61f5a155b187b6ab2b75fff827c2f);
+            
+        
+
+        marker_99815e87fa00181f52be77c16bef649e.bindPopup(popup_7d3ee45e0ee1d673162f2f5947d0ac82)
+        ;
+
+        
+    
+    
+            var marker_7760754955a69d4c166dd6acf0244677 = L.marker(
+                [-37.665851039818996, 145.01719296110826],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e918b4b8b9ded9e69690a4478dab358e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3425ba37a5037c32eb646be14d1af53 = $(`<div id="html_b3425ba37a5037c32eb646be14d1af53" style="width: 100.0%; height: 100.0%;">Train Station: Lalor Railway Station (Lalor) (Stop ID: 20006)</div>`)[0];
+                popup_e918b4b8b9ded9e69690a4478dab358e.setContent(html_b3425ba37a5037c32eb646be14d1af53);
+            
+        
+
+        marker_7760754955a69d4c166dd6acf0244677.bindPopup(popup_e918b4b8b9ded9e69690a4478dab358e)
+        ;
+
+        
+    
+    
+            var marker_080c62bf675c03fe88443512f4529e16 = L.marker(
+                [-37.680337978698795, 145.01427914567134],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_47b3717eed1be3a14ac8a47718888f4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccab71e778874590fdf99a2e3b29976b = $(`<div id="html_ccab71e778874590fdf99a2e3b29976b" style="width: 100.0%; height: 100.0%;">Train Station: Thomastown Railway Station (Thomastown) (Stop ID: 20007)</div>`)[0];
+                popup_47b3717eed1be3a14ac8a47718888f4a.setContent(html_ccab71e778874590fdf99a2e3b29976b);
+            
+        
+
+        marker_080c62bf675c03fe88443512f4529e16.bindPopup(popup_47b3717eed1be3a14ac8a47718888f4a)
+        ;
+
+        
+    
+    
+            var marker_1ccbcee2f333313fbce409c0da502248 = L.marker(
+                [-37.6948700083548, 145.01188405834273],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_588882036cb502bd324926728de7b5e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ede3bbac02234aabbd718c83140debe = $(`<div id="html_7ede3bbac02234aabbd718c83140debe" style="width: 100.0%; height: 100.0%;">Train Station: Keon Park Railway Station (Thomastown) (Stop ID: 20008)</div>`)[0];
+                popup_588882036cb502bd324926728de7b5e9.setContent(html_7ede3bbac02234aabbd718c83140debe);
+            
+        
+
+        marker_1ccbcee2f333313fbce409c0da502248.bindPopup(popup_588882036cb502bd324926728de7b5e9)
+        ;
+
+        
+    
+    
+            var marker_fcda14a4457df5ace0faa161244ac74c = L.marker(
+                [-37.707897956372506, 145.00951704207858],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_6e2a9085bb5e5672b71b9806fa0875d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53b0cfd41f8fbe73c0b17d1236720eb5 = $(`<div id="html_53b0cfd41f8fbe73c0b17d1236720eb5" style="width: 100.0%; height: 100.0%;">Train Station: Ruthven Railway Station (Reservoir) (Stop ID: 20009)</div>`)[0];
+                popup_6e2a9085bb5e5672b71b9806fa0875d3.setContent(html_53b0cfd41f8fbe73c0b17d1236720eb5);
+            
+        
+
+        marker_fcda14a4457df5ace0faa161244ac74c.bindPopup(popup_6e2a9085bb5e5672b71b9806fa0875d3)
+        ;
+
+        
+    
+    
+            var marker_05bd1a7550431d0c60cc9e8ba3a5060c = L.marker(
+                [-37.71688499694048, 145.00699596597707],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_4ba432925a2b473741e841fbcb1b944c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44bef0490c44b780c92fed855965a18f = $(`<div id="html_44bef0490c44b780c92fed855965a18f" style="width: 100.0%; height: 100.0%;">Train Station: Reservoir Railway Station (Reservoir) (Stop ID: 20010)</div>`)[0];
+                popup_4ba432925a2b473741e841fbcb1b944c.setContent(html_44bef0490c44b780c92fed855965a18f);
+            
+        
+
+        marker_05bd1a7550431d0c60cc9e8ba3a5060c.bindPopup(popup_4ba432925a2b473741e841fbcb1b944c)
+        ;
+
+        
+    
+    
+            var marker_2474ee34c8e32a6909895a9d6289bef0 = L.marker(
+                [-37.728403018220824, 145.00277316312736],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_942f2196d2648ef79f94da8695880aa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fa10666aa9794e69bcd7265784ede18 = $(`<div id="html_8fa10666aa9794e69bcd7265784ede18" style="width: 100.0%; height: 100.0%;">Train Station: Regent Railway Station (Reservoir) (Stop ID: 20011)</div>`)[0];
+                popup_942f2196d2648ef79f94da8695880aa3.setContent(html_8fa10666aa9794e69bcd7265784ede18);
+            
+        
+
+        marker_2474ee34c8e32a6909895a9d6289bef0.bindPopup(popup_942f2196d2648ef79f94da8695880aa3)
+        ;
+
+        
+    
+    
+            var marker_11c4c28824641f08f03d94e9f05c1f87 = L.marker(
+                [-37.738673997291826, 145.00052208049493],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_04917970e787cfdd4c657bfff2e6428f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5628868ae99b261fa5cffd8249e6a2 = $(`<div id="html_ec5628868ae99b261fa5cffd8249e6a2" style="width: 100.0%; height: 100.0%;">Train Station: Preston Railway Station (Preston) (Stop ID: 20012)</div>`)[0];
+                popup_04917970e787cfdd4c657bfff2e6428f.setContent(html_ec5628868ae99b261fa5cffd8249e6a2);
+            
+        
+
+        marker_11c4c28824641f08f03d94e9f05c1f87.bindPopup(popup_04917970e787cfdd4c657bfff2e6428f)
+        ;
+
+        
+    
+    
+            var marker_415a6f7da6910840a2c60dd13b7c9c52 = L.marker(
+                [-37.74556196740014, 145.00015487669162],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_edfb3270612edfdc170bf910092c295b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ee5da73831d6c31b8ecdb68d05a825d = $(`<div id="html_5ee5da73831d6c31b8ecdb68d05a825d" style="width: 100.0%; height: 100.0%;">Train Station: Bell Railway Station (Preston) (Stop ID: 20013)</div>`)[0];
+                popup_edfb3270612edfdc170bf910092c295b.setContent(html_5ee5da73831d6c31b8ecdb68d05a825d);
+            
+        
+
+        marker_415a6f7da6910840a2c60dd13b7c9c52.bindPopup(popup_edfb3270612edfdc170bf910092c295b)
+        ;
+
+        
+    
+    
+            var marker_3371d363350368c79f313c2d23d10e4a = L.marker(
+                [-37.75505201755157, 144.99857195554867],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_757e730d1c6dc530935b8324b65add84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d49b23dcf7807e7c5a270e2c2fc30f34 = $(`<div id="html_d49b23dcf7807e7c5a270e2c2fc30f34" style="width: 100.0%; height: 100.0%;">Train Station: Thornbury Railway Station (Thornbury) (Stop ID: 20014)</div>`)[0];
+                popup_757e730d1c6dc530935b8324b65add84.setContent(html_d49b23dcf7807e7c5a270e2c2fc30f34);
+            
+        
+
+        marker_3371d363350368c79f313c2d23d10e4a.bindPopup(popup_757e730d1c6dc530935b8324b65add84)
+        ;
+
+        
+    
+    
+            var marker_61d776ab049f648e8323095995c18274 = L.marker(
+                [-37.764100977920975, 144.99705601149938],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e6d3549156acb2b73b1012e4b3e999b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa5075c0fe30c0e596802d8fbbe352c2 = $(`<div id="html_fa5075c0fe30c0e596802d8fbbe352c2" style="width: 100.0%; height: 100.0%;">Train Station: Croxton Railway Station (Northcote) (Stop ID: 20015)</div>`)[0];
+                popup_e6d3549156acb2b73b1012e4b3e999b8.setContent(html_fa5075c0fe30c0e596802d8fbbe352c2);
+            
+        
+
+        marker_61d776ab049f648e8323095995c18274.bindPopup(popup_e6d3549156acb2b73b1012e4b3e999b8)
+        ;
+
+        
+    
+    
+            var marker_351b935e1d09d6aae97dd094e4a3166d = L.marker(
+                [-37.7698650286647, 144.99527690393882],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_fccb071d4249a9cf0259d2e7f9600454 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84bc0dfa38ca28bcc2532522d0343be4 = $(`<div id="html_84bc0dfa38ca28bcc2532522d0343be4" style="width: 100.0%; height: 100.0%;">Train Station: Northcote Railway Station (Northcote) (Stop ID: 20016)</div>`)[0];
+                popup_fccb071d4249a9cf0259d2e7f9600454.setContent(html_84bc0dfa38ca28bcc2532522d0343be4);
+            
+        
+
+        marker_351b935e1d09d6aae97dd094e4a3166d.bindPopup(popup_fccb071d4249a9cf0259d2e7f9600454)
+        ;
+
+        
+    
+    
+            var marker_ec2010b04c3a29abbe1d3e6c6e59cea4 = L.marker(
+                [-37.77784704042674, 144.9929721934344],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f140f6a0167c6b2a3525b57709b51739 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21c71ba84fa40436ed38d1cce792a161 = $(`<div id="html_21c71ba84fa40436ed38d1cce792a161" style="width: 100.0%; height: 100.0%;">Train Station: Merri Railway Station (Northcote) (Stop ID: 20017)</div>`)[0];
+                popup_f140f6a0167c6b2a3525b57709b51739.setContent(html_21c71ba84fa40436ed38d1cce792a161);
+            
+        
+
+        marker_ec2010b04c3a29abbe1d3e6c6e59cea4.bindPopup(popup_f140f6a0167c6b2a3525b57709b51739)
+        ;
+
+        
+    
+    
+            var marker_6a37162d9f58323718d8dd53a489826d = L.marker(
+                [-37.783216981751494, 144.99240699877623],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f0ce150809f7471c3ebf29b37725259d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_008ea94995116e2534d3fb26e8e42624 = $(`<div id="html_008ea94995116e2534d3fb26e8e42624" style="width: 100.0%; height: 100.0%;">Train Station: Rushall Railway Station (Fitzroy North) (Stop ID: 20019)</div>`)[0];
+                popup_f0ce150809f7471c3ebf29b37725259d.setContent(html_008ea94995116e2534d3fb26e8e42624);
+            
+        
+
+        marker_6a37162d9f58323718d8dd53a489826d.bindPopup(popup_f0ce150809f7471c3ebf29b37725259d)
+        ;
+
+        
+    
+    
+            var marker_5c79f7b2fa18704d4478f6a0d81c1cf8 = L.marker(
+                [-37.78853598103241, 144.83287803702032],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_73471c1e4ce609d95482f816c502f52f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b16cc873a3e134ed018fea7a560164af = $(`<div id="html_b16cc873a3e134ed018fea7a560164af" style="width: 100.0%; height: 100.0%;">Train Station: Sunshine Railway Station (Sunshine) (Stop ID: 20021)</div>`)[0];
+                popup_73471c1e4ce609d95482f816c502f52f.setContent(html_b16cc873a3e134ed018fea7a560164af);
+            
+        
+
+        marker_5c79f7b2fa18704d4478f6a0d81c1cf8.bindPopup(popup_73471c1e4ce609d95482f816c502f52f)
+        ;
+
+        
+    
+    
+            var marker_211f884fcdd7e342df9e149a01ae0e37 = L.marker(
+                [-37.79925101953307, 144.86294482805647],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_233d9fdd1e0f9e3c6495c31e53492be4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db06656b3d023e77c1199657bd9d7280 = $(`<div id="html_db06656b3d023e77c1199657bd9d7280" style="width: 100.0%; height: 100.0%;">Train Station: Tottenham Railway Station (West Footscray) (Stop ID: 20022)</div>`)[0];
+                popup_233d9fdd1e0f9e3c6495c31e53492be4.setContent(html_db06656b3d023e77c1199657bd9d7280);
+            
+        
+
+        marker_211f884fcdd7e342df9e149a01ae0e37.bindPopup(popup_233d9fdd1e0f9e3c6495c31e53492be4)
+        ;
+
+        
+    
+    
+            var marker_68d7944432f4c1e458036c4367950c26 = L.marker(
+                [-37.80180296938542, 144.88398504854027],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_7a85f9e75897a10908f585124b887df1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78c1ed20b1670e5b5375c475a5f9dfbc = $(`<div id="html_78c1ed20b1670e5b5375c475a5f9dfbc" style="width: 100.0%; height: 100.0%;">Train Station: West Footscray Railway Station (West Footscray) (Stop ID: 20023)</div>`)[0];
+                popup_7a85f9e75897a10908f585124b887df1.setContent(html_78c1ed20b1670e5b5375c475a5f9dfbc);
+            
+        
+
+        marker_68d7944432f4c1e458036c4367950c26.bindPopup(popup_7a85f9e75897a10908f585124b887df1)
+        ;
+
+        
+    
+    
+            var marker_7388af3488754bc817590f67ccf1a3ce = L.marker(
+                [-37.802504970278676, 144.8914719665355],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_30ef4f7c375eb840a64d16cfa72ecb94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c857b0f672ccb2de90bc2f2538b26eb = $(`<div id="html_2c857b0f672ccb2de90bc2f2538b26eb" style="width: 100.0%; height: 100.0%;">Train Station: Middle Footscray Railway Station (Footscray) (Stop ID: 20024)</div>`)[0];
+                popup_30ef4f7c375eb840a64d16cfa72ecb94.setContent(html_2c857b0f672ccb2de90bc2f2538b26eb);
+            
+        
+
+        marker_7388af3488754bc817590f67ccf1a3ce.bindPopup(popup_30ef4f7c375eb840a64d16cfa72ecb94)
+        ;
+
+        
+    
+    
+            var marker_6d10c4e850acf66d51ebb5f9acc54c77 = L.marker(
+                [-37.80108297392747, 144.90319893797937],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_bc5ec15b033938be7a1cd4d3a80ca4cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b74dff4b47f745ccf409e748e8a8514f = $(`<div id="html_b74dff4b47f745ccf409e748e8a8514f" style="width: 100.0%; height: 100.0%;">Train Station: Footscray Railway Station (Footscray) (Stop ID: 20025)</div>`)[0];
+                popup_bc5ec15b033938be7a1cd4d3a80ca4cc.setContent(html_b74dff4b47f745ccf409e748e8a8514f);
+            
+        
+
+        marker_6d10c4e850acf66d51ebb5f9acc54c77.bindPopup(popup_bc5ec15b033938be7a1cd4d3a80ca4cc)
+        ;
+
+        
+    
+    
+            var marker_49190c2842bcf78c3051f34b36aa784f = L.marker(
+                [-37.799531010135645, 144.92546896739066],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_686d015cabfbffcf8ffe1b05367afbe4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_527515c76bbfe8fdcf298ea2bb65f53b = $(`<div id="html_527515c76bbfe8fdcf298ea2bb65f53b" style="width: 100.0%; height: 100.0%;">Train Station: South Kensington Railway Station (Kensington) (Stop ID: 20026)</div>`)[0];
+                popup_686d015cabfbffcf8ffe1b05367afbe4.setContent(html_527515c76bbfe8fdcf298ea2bb65f53b);
+            
+        
+
+        marker_49190c2842bcf78c3051f34b36aa784f.bindPopup(popup_686d015cabfbffcf8ffe1b05367afbe4)
+        ;
+
+        
+    
+    
+            var marker_9bd3135b9d45a003fa394d7fdc0709e0 = L.marker(
+                [-37.68304895729302, 144.91961320131395],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a435808e186c88bdf6fa76090e64cc56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eacb402968c299c1f9dc93b799e52f5 = $(`<div id="html_0eacb402968c299c1f9dc93b799e52f5" style="width: 100.0%; height: 100.0%;">Train Station: Broadmeadows Railway Station (Broadmeadows) (Stop ID: 20030)</div>`)[0];
+                popup_a435808e186c88bdf6fa76090e64cc56.setContent(html_0eacb402968c299c1f9dc93b799e52f5);
+            
+        
+
+        marker_9bd3135b9d45a003fa394d7fdc0709e0.bindPopup(popup_a435808e186c88bdf6fa76090e64cc56)
+        ;
+
+        
+    
+    
+            var marker_8d5e01b0bbff2e90440e556938c85ec0 = L.marker(
+                [-37.695131010164516, 144.9158511944258],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_dec18f295c15a9d3a94d21f6d625fda1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5c9886fc4bb7cc415492112bde24fb5 = $(`<div id="html_b5c9886fc4bb7cc415492112bde24fb5" style="width: 100.0%; height: 100.0%;">Train Station: Jacana Railway Station (Glenroy) (Stop ID: 20031)</div>`)[0];
+                popup_dec18f295c15a9d3a94d21f6d625fda1.setContent(html_b5c9886fc4bb7cc415492112bde24fb5);
+            
+        
+
+        marker_8d5e01b0bbff2e90440e556938c85ec0.bindPopup(popup_dec18f295c15a9d3a94d21f6d625fda1)
+        ;
+
+        
+    
+    
+            var marker_cf35814cd225bcaeda330c0a738af59d = L.marker(
+                [-37.70453600891375, 144.91721989592028],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a1429a7774874f07db857fffeccff6fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d91bf271b4cfe400c06f4360de4b89c6 = $(`<div id="html_d91bf271b4cfe400c06f4360de4b89c6" style="width: 100.0%; height: 100.0%;">Train Station: Glenroy Railway Station (Glenroy) (Stop ID: 20032)</div>`)[0];
+                popup_a1429a7774874f07db857fffeccff6fa.setContent(html_d91bf271b4cfe400c06f4360de4b89c6);
+            
+        
+
+        marker_cf35814cd225bcaeda330c0a738af59d.bindPopup(popup_a1429a7774874f07db857fffeccff6fa)
+        ;
+
+        
+    
+    
+            var marker_444ff25b57f48ca4b23f250791c627eb = L.marker(
+                [-37.71794996733691, 144.9215190050332],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e505f2cfa8d26530136298d317b6a75e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef69c6247a8219c19c6ec19ee3164574 = $(`<div id="html_ef69c6247a8219c19c6ec19ee3164574" style="width: 100.0%; height: 100.0%;">Train Station: Oak Park Railway Station (Oak Park) (Stop ID: 20033)</div>`)[0];
+                popup_e505f2cfa8d26530136298d317b6a75e.setContent(html_ef69c6247a8219c19c6ec19ee3164574);
+            
+        
+
+        marker_444ff25b57f48ca4b23f250791c627eb.bindPopup(popup_e505f2cfa8d26530136298d317b6a75e)
+        ;
+
+        
+    
+    
+            var marker_e07e439fd6475c53a02e78f1722d5980 = L.marker(
+                [-37.73075597710179, 144.92819593517615],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_27956e6eb280e88cc7b2775c70cffdfd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6b47b63c556505b70b1a33f46960dc4 = $(`<div id="html_a6b47b63c556505b70b1a33f46960dc4" style="width: 100.0%; height: 100.0%;">Train Station: Pascoe Vale Railway Station (Pascoe Vale) (Stop ID: 20034)</div>`)[0];
+                popup_27956e6eb280e88cc7b2775c70cffdfd.setContent(html_a6b47b63c556505b70b1a33f46960dc4);
+            
+        
+
+        marker_e07e439fd6475c53a02e78f1722d5980.bindPopup(popup_27956e6eb280e88cc7b2775c70cffdfd)
+        ;
+
+        
+    
+    
+            var marker_90b8c0579dca9885e7024d3b1d906f52 = L.marker(
+                [-37.74359096751782, 144.92731609110757],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5f061f942c42eba972907b7f3d9831dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c869d19bd4a14a8c47bf7575af720ba2 = $(`<div id="html_c869d19bd4a14a8c47bf7575af720ba2" style="width: 100.0%; height: 100.0%;">Train Station: Strathmore Railway Station (Strathmore) (Stop ID: 20035)</div>`)[0];
+                popup_5f061f942c42eba972907b7f3d9831dc.setContent(html_c869d19bd4a14a8c47bf7575af720ba2);
+            
+        
+
+        marker_90b8c0579dca9885e7024d3b1d906f52.bindPopup(popup_5f061f942c42eba972907b7f3d9831dc)
+        ;
+
+        
+    
+    
+            var marker_9800f3e21e55546d100e04810b0c0fdb = L.marker(
+                [-37.74720995793417, 144.9209390576499],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a5839c8c5a461b9914274ebf1cca3ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae0526d22261759446c432b1589cb0c1 = $(`<div id="html_ae0526d22261759446c432b1589cb0c1" style="width: 100.0%; height: 100.0%;">Train Station: Glenbervie Railway Station (Essendon) (Stop ID: 20036)</div>`)[0];
+                popup_a5839c8c5a461b9914274ebf1cca3ea6.setContent(html_ae0526d22261759446c432b1589cb0c1);
+            
+        
+
+        marker_9800f3e21e55546d100e04810b0c0fdb.bindPopup(popup_a5839c8c5a461b9914274ebf1cca3ea6)
+        ;
+
+        
+    
+    
+            var marker_aecb5ea977570ed89e0bdb4b22277dae = L.marker(
+                [-37.75601195980886, 144.91619785779378],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_dc1beb3d8c65785fe43b342ddc443390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0eb7fdbeb75874582d2f6ff7727cb0c5 = $(`<div id="html_0eb7fdbeb75874582d2f6ff7727cb0c5" style="width: 100.0%; height: 100.0%;">Train Station: Essendon Railway Station (Essendon) (Stop ID: 20037)</div>`)[0];
+                popup_dc1beb3d8c65785fe43b342ddc443390.setContent(html_0eb7fdbeb75874582d2f6ff7727cb0c5);
+            
+        
+
+        marker_aecb5ea977570ed89e0bdb4b22277dae.bindPopup(popup_dc1beb3d8c65785fe43b342ddc443390)
+        ;
+
+        
+    
+    
+            var marker_c25cfb2fb58c0cb1f4a4ba1d500d0609 = L.marker(
+                [-37.765707029872225, 144.91916101804085],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ab62fa7ee97c14aba712af8aad912fe6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17e16a4bcde7afa67cf6538e3165d3b9 = $(`<div id="html_17e16a4bcde7afa67cf6538e3165d3b9" style="width: 100.0%; height: 100.0%;">Train Station: Moonee Ponds Railway Station (Moonee Ponds) (Stop ID: 20038)</div>`)[0];
+                popup_ab62fa7ee97c14aba712af8aad912fe6.setContent(html_17e16a4bcde7afa67cf6538e3165d3b9);
+            
+        
+
+        marker_c25cfb2fb58c0cb1f4a4ba1d500d0609.bindPopup(popup_ab62fa7ee97c14aba712af8aad912fe6)
+        ;
+
+        
+    
+    
+            var marker_795bd49529ddf0af60dcbfbe9a4cd180 = L.marker(
+                [-37.775305978752286, 144.92182105511844],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_496bb5266473034f62fdd72dfbed1888 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2334af3005c092f7fa67613f72ed288c = $(`<div id="html_2334af3005c092f7fa67613f72ed288c" style="width: 100.0%; height: 100.0%;">Train Station: Ascot Vale Railway Station (Ascot Vale) (Stop ID: 20039)</div>`)[0];
+                popup_496bb5266473034f62fdd72dfbed1888.setContent(html_2334af3005c092f7fa67613f72ed288c);
+            
+        
+
+        marker_795bd49529ddf0af60dcbfbe9a4cd180.bindPopup(popup_496bb5266473034f62fdd72dfbed1888)
+        ;
+
+        
+    
+    
+            var marker_8897202c14695638cb31f88f4bcba3ae = L.marker(
+                [-37.78732800123391, 144.9289778791842],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e0bc7a362619038bd7441d2b9f0e7465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_179c651cfd19ac2d9a286806f981e011 = $(`<div id="html_179c651cfd19ac2d9a286806f981e011" style="width: 100.0%; height: 100.0%;">Train Station: Newmarket Railway Station (Flemington) (Stop ID: 20040)</div>`)[0];
+                popup_e0bc7a362619038bd7441d2b9f0e7465.setContent(html_179c651cfd19ac2d9a286806f981e011);
+            
+        
+
+        marker_8897202c14695638cb31f88f4bcba3ae.bindPopup(popup_e0bc7a362619038bd7441d2b9f0e7465)
+        ;
+
+        
+    
+    
+            var marker_b898599ef2585a981a59f4161258aea2 = L.marker(
+                [-37.79378001234484, 144.93052408229383],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9c3e31cd32ab1cbff4bac79a77a1cfb2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aadde663532e210180220e7841052e98 = $(`<div id="html_aadde663532e210180220e7841052e98" style="width: 100.0%; height: 100.0%;">Train Station: Kensington Railway Station (Kensington) (Stop ID: 20041)</div>`)[0];
+                popup_9c3e31cd32ab1cbff4bac79a77a1cfb2.setContent(html_aadde663532e210180220e7841052e98);
+            
+        
+
+        marker_b898599ef2585a981a59f4161258aea2.bindPopup(popup_9c3e31cd32ab1cbff4bac79a77a1cfb2)
+        ;
+
+        
+    
+    
+            var marker_12376ebd76e4a4adf6bf31b46ac95fea = L.marker(
+                [-37.819222033091656, 145.1214291542125],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5d0b228007a8f64bf57dbc86ee7db99d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1850c7c955e9e93611718c6fc053bedc = $(`<div id="html_1850c7c955e9e93611718c6fc053bedc" style="width: 100.0%; height: 100.0%;">Train Station: Box Hill Railway Station (Box Hill) (Stop ID: 20042)</div>`)[0];
+                popup_5d0b228007a8f64bf57dbc86ee7db99d.setContent(html_1850c7c955e9e93611718c6fc053bedc);
+            
+        
+
+        marker_12376ebd76e4a4adf6bf31b46ac95fea.bindPopup(popup_5d0b228007a8f64bf57dbc86ee7db99d)
+        ;
+
+        
+    
+    
+            var marker_7b25f4064e60a4d1a4e8f419f0ee8cd9 = L.marker(
+                [-37.81793601351573, 144.9514108850503],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e443206d909af7afb0725cc88922611a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e53855352a8e1ef1068855ba30024610 = $(`<div id="html_e53855352a8e1ef1068855ba30024610" style="width: 100.0%; height: 100.0%;">Train Station: Southern Cross Railway Station (Melbourne City) (Stop ID: 22180)</div>`)[0];
+                popup_e443206d909af7afb0725cc88922611a.setContent(html_e53855352a8e1ef1068855ba30024610);
+            
+        
+
+        marker_7b25f4064e60a4d1a4e8f419f0ee8cd9.bindPopup(popup_e443206d909af7afb0725cc88922611a)
+        ;
+
+        
+    
+    
+            var marker_03e7f4fcf7fa5c4162fdea99554f9f05 = L.marker(
+                [-37.63823102879973, 144.9354038580987],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_c9f420359185d41a64ad04e5de245003 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14a895a69cfdacc1247f54687d41c594 = $(`<div id="html_14a895a69cfdacc1247f54687d41c594" style="width: 100.0%; height: 100.0%;">Train Station: Roxburgh Park Railway Station (Roxburgh Park) (Stop ID: 40220)</div>`)[0];
+                popup_c9f420359185d41a64ad04e5de245003.setContent(html_14a895a69cfdacc1247f54687d41c594);
+            
+        
+
+        marker_03e7f4fcf7fa5c4162fdea99554f9f05.bindPopup(popup_c9f420359185d41a64ad04e5de245003)
+        ;
+
+        
+    
+    
+            var marker_fcfbde9ad1ff90e31602623ce5591707 = L.marker(
+                [-37.6018170275946, 144.94331989483877],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_451d9d39291a63b10e8bb678377dad8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_761c9a9095538c99e9d85113d0ee7653 = $(`<div id="html_761c9a9095538c99e9d85113d0ee7653" style="width: 100.0%; height: 100.0%;">Train Station: Craigieburn Railway Station (Craigieburn) (Stop ID: 40221)</div>`)[0];
+                popup_451d9d39291a63b10e8bb678377dad8c.setContent(html_761c9a9095538c99e9d85113d0ee7653);
+            
+        
+
+        marker_fcfbde9ad1ff90e31602623ce5591707.bindPopup(popup_451d9d39291a63b10e8bb678377dad8c)
+        ;
+
+        
+    
+    
+            var marker_8d5b2cfc446a6988bdcb2873cd587782 = L.marker(
+                [-37.6610030113571, 144.92605609416944],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ff6f8a4e559f1405051b2bf4d60875ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e20fd0ce04b837bff3488ad45c43e0fa = $(`<div id="html_e20fd0ce04b837bff3488ad45c43e0fa" style="width: 100.0%; height: 100.0%;">Train Station: Coolaroo Railway Station (Coolaroo) (Stop ID: 44817)</div>`)[0];
+                popup_ff6f8a4e559f1405051b2bf4d60875ce.setContent(html_e20fd0ce04b837bff3488ad45c43e0fa);
+            
+        
+
+        marker_8d5b2cfc446a6988bdcb2873cd587782.bindPopup(popup_ff6f8a4e559f1405051b2bf4d60875ce)
+        ;
+
+        
+    
+    
+            var marker_750a1a7522a5a43562abb4c1830d5976 = L.marker(
+                [-38.057340961642154, 145.24927487781102],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_4df3f8a9c3ddc5569fb796cd8e1cf589 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c4aaef3cdad4b18353bdb9af0067dd6 = $(`<div id="html_7c4aaef3cdad4b18353bdb9af0067dd6" style="width: 100.0%; height: 100.0%;">Train Station: Lynbrook Railway Station (Lynbrook) (Stop ID: 45793)</div>`)[0];
+                popup_4df3f8a9c3ddc5569fb796cd8e1cf589.setContent(html_7c4aaef3cdad4b18353bdb9af0067dd6);
+            
+        
+
+        marker_750a1a7522a5a43562abb4c1830d5976.bindPopup(popup_4df3f8a9c3ddc5569fb796cd8e1cf589)
+        ;
+
+        
+    
+    
+            var marker_141dd08281335b8be57b2e62973a5293 = L.marker(
+                [-38.071289971320894, 145.43779105694023],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_77b8cdb3626244f6ca7e17b546ea2d3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5048d10cbead6c366cd68315622a53a = $(`<div id="html_e5048d10cbead6c366cd68315622a53a" style="width: 100.0%; height: 100.0%;">Train Station: Cardinia Road Railway Station (Pakenham) (Stop ID: 45794)</div>`)[0];
+                popup_77b8cdb3626244f6ca7e17b546ea2d3e.setContent(html_e5048d10cbead6c366cd68315622a53a);
+            
+        
+
+        marker_141dd08281335b8be57b2e62973a5293.bindPopup(popup_77b8cdb3626244f6ca7e17b546ea2d3e)
+        ;
+
+        
+    
+    
+            var marker_7c8ce208425dec61aab6c3df69105ce5 = L.marker(
+                [-37.64915901306895, 145.0670320966615],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_094549b674276416cb357d419110e967 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8d7a34a71baae93a5ca5f4ac01a7511 = $(`<div id="html_f8d7a34a71baae93a5ca5f4ac01a7511" style="width: 100.0%; height: 100.0%;">Train Station: South Morang Railway Station (South Morang) (Stop ID: 45795)</div>`)[0];
+                popup_094549b674276416cb357d419110e967.setContent(html_f8d7a34a71baae93a5ca5f4ac01a7511);
+            
+        
+
+        marker_7c8ce208425dec61aab6c3df69105ce5.bindPopup(popup_094549b674276416cb357d419110e967)
+        ;
+
+        
+    
+    
+            var marker_568aa6e16772139e488fcbff6f436d20 = L.marker(
+                [-37.8698650235294, 144.74744497619167],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b664bb98f8397fda85e678ad5b8665c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb77d91f298ea4a3d651f852fa0f1dbf = $(`<div id="html_eb77d91f298ea4a3d651f852fa0f1dbf" style="width: 100.0%; height: 100.0%;">Train Station: Williams Landing Railway Station (Williams Landing) (Stop ID: 46468)</div>`)[0];
+                popup_b664bb98f8397fda85e678ad5b8665c0.setContent(html_eb77d91f298ea4a3d651f852fa0f1dbf);
+            
+        
+
+        marker_568aa6e16772139e488fcbff6f436d20.bindPopup(popup_b664bb98f8397fda85e678ad5b8665c0)
+        ;
+
+        
+    
+    
+            var marker_80c71f878fa3864481f23e1d2b8a8048 = L.marker(
+                [-37.95875605115335, 145.0491210080803],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ceb32878121b15ff6bed4297f7fb846c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_168cf237dfbb80513caa190fce3fca5b = $(`<div id="html_168cf237dfbb80513caa190fce3fca5b" style="width: 100.0%; height: 100.0%;">Train Station: Southland Railway Station (Cheltenham) (Stop ID: 52095)</div>`)[0];
+                popup_ceb32878121b15ff6bed4297f7fb846c.setContent(html_168cf237dfbb80513caa190fce3fca5b);
+            
+        
+
+        marker_80c71f878fa3864481f23e1d2b8a8048.bindPopup(popup_ceb32878121b15ff6bed4297f7fb846c)
+        ;
+
+        
+    
+    
+            var marker_a7e143e67e7f5f26546265b6587e83e1 = L.marker(
+                [-37.644060959065094, 145.09214389829435],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b84abcbf3f7705de084a64f939e70ec1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07aee83b9d8e3bb594dc13667c7092e0 = $(`<div id="html_07aee83b9d8e3bb594dc13667c7092e0" style="width: 100.0%; height: 100.0%;">Train Station: Middle Gorge Railway Station (South Morang) (Stop ID: 52159)</div>`)[0];
+                popup_b84abcbf3f7705de084a64f939e70ec1.setContent(html_07aee83b9d8e3bb594dc13667c7092e0);
+            
+        
+
+        marker_a7e143e67e7f5f26546265b6587e83e1.bindPopup(popup_b84abcbf3f7705de084a64f939e70ec1)
+        ;
+
+        
+    
+    
+            var marker_16269aafc2ec345842ed84e65f451944 = L.marker(
+                [-37.62299502042986, 145.0973959520007],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_37d04c7c2329e2d61e479ead242d7358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1701132153d2bd2688740462fc662ee = $(`<div id="html_f1701132153d2bd2688740462fc662ee" style="width: 100.0%; height: 100.0%;">Train Station: Hawkstowe Railway Station (South Morang) (Stop ID: 52160)</div>`)[0];
+                popup_37d04c7c2329e2d61e479ead242d7358.setContent(html_f1701132153d2bd2688740462fc662ee);
+            
+        
+
+        marker_16269aafc2ec345842ed84e65f451944.bindPopup(popup_37d04c7c2329e2d61e479ead242d7358)
+        ;
+
+        
+    
+    
+            var marker_75d780fe04fb7d2ead2d8fe922b5364c = L.marker(
+                [-37.602548008693105, 145.1008850816138],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ce649681b0a84b3e8f1f0086efe43e67 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b2f8af47e17ad1557d3ef116d1883f04 = $(`<div id="html_b2f8af47e17ad1557d3ef116d1883f04" style="width: 100.0%; height: 100.0%;">Train Station: Mernda Railway Station (Mernda) (Stop ID: 52161)</div>`)[0];
+                popup_ce649681b0a84b3e8f1f0086efe43e67.setContent(html_b2f8af47e17ad1557d3ef116d1883f04);
+            
+        
+
+        marker_75d780fe04fb7d2ead2d8fe922b5364c.bindPopup(popup_ce649681b0a84b3e8f1f0086efe43e67)
+        ;
+
+        
+    
+    
+            var marker_1270055171f5b40a88e1401ae2780346 = L.marker(
+                [-37.579091041919106, 144.7273191965987],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9b9a587445160fff5798adbcad7c06e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b64561a3d7126c5359639b12eec15fbd = $(`<div id="html_b64561a3d7126c5359639b12eec15fbd" style="width: 100.0%; height: 100.0%;">Train Station: Sunbury Railway Station (Sunbury) (Stop ID: 15351)</div>`)[0];
+                popup_9b9a587445160fff5798adbcad7c06e2.setContent(html_b64561a3d7126c5359639b12eec15fbd);
+            
+        
+
+        marker_1270055171f5b40a88e1401ae2780346.bindPopup(popup_9b9a587445160fff5798adbcad7c06e2)
+        ;
+
+        
+    
+    
+            var marker_e50ae0984bf3fc09a7780d2694268bfe = L.marker(
+                [-37.62701703098356, 144.719921894289],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9e163cedb95dd750ab266e1f41b3e258 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52deaaa4f4505ba272e614908f313b6c = $(`<div id="html_52deaaa4f4505ba272e614908f313b6c" style="width: 100.0%; height: 100.0%;">Train Station: Diggers Rest Railway Station (Diggers Rest) (Stop ID: 15353)</div>`)[0];
+                popup_9e163cedb95dd750ab266e1f41b3e258.setContent(html_52deaaa4f4505ba272e614908f313b6c);
+            
+        
+
+        marker_e50ae0984bf3fc09a7780d2694268bfe.bindPopup(popup_9e163cedb95dd750ab266e1f41b3e258)
+        ;
+
+        
+    
+    
+            var marker_16dc7b6fd325d9da5db5233335f1f339 = L.marker(
+                [-38.37423501463105, 145.2218371303087],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3d74ac3d38594d7e5e175b4a13126b9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffe75c9bee75b1144788c4b0b5e39cf8 = $(`<div id="html_ffe75c9bee75b1144788c4b0b5e39cf8" style="width: 100.0%; height: 100.0%;">Train Station: Stony Point Railway Station (Crib Point) (Stop ID: 19827)</div>`)[0];
+                popup_3d74ac3d38594d7e5e175b4a13126b9b.setContent(html_ffe75c9bee75b1144788c4b0b5e39cf8);
+            
+        
+
+        marker_16dc7b6fd325d9da5db5233335f1f339.bindPopup(popup_3d74ac3d38594d7e5e175b4a13126b9b)
+        ;
+
+        
+    
+    
+            var marker_dc8a50365e918bbba7dc041d59d7e787 = L.marker(
+                [-38.366123042492156, 145.20404302458843],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8647dc67bad16f3f2ee03339d370ad2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b44595551659554b6e1cd3f04d86acda = $(`<div id="html_b44595551659554b6e1cd3f04d86acda" style="width: 100.0%; height: 100.0%;">Train Station: Crib Point Railway Station (Crib Point) (Stop ID: 19828)</div>`)[0];
+                popup_8647dc67bad16f3f2ee03339d370ad2b.setContent(html_b44595551659554b6e1cd3f04d86acda);
+            
+        
+
+        marker_dc8a50365e918bbba7dc041d59d7e787.bindPopup(popup_8647dc67bad16f3f2ee03339d370ad2b)
+        ;
+
+        
+    
+    
+            var marker_38923ff03963de720502b5ace48ec4de = L.marker(
+                [-38.35403298231219, 145.18960200468328],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_071921c9e69ca692069685a0a19243f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5658146cb8840af0917eee023c4cdde = $(`<div id="html_d5658146cb8840af0917eee023c4cdde" style="width: 100.0%; height: 100.0%;">Train Station: Morradoo Railway Station (Crib Point) (Stop ID: 19829)</div>`)[0];
+                popup_071921c9e69ca692069685a0a19243f7.setContent(html_d5658146cb8840af0917eee023c4cdde);
+            
+        
+
+        marker_38923ff03963de720502b5ace48ec4de.bindPopup(popup_071921c9e69ca692069685a0a19243f7)
+        ;
+
+        
+    
+    
+            var marker_cc7169dbcd062de2e7eb7b8b2b5d04e1 = L.marker(
+                [-38.33739000410354, 145.17802694776515],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_95c0f02f0d1f8b7cdd39012116185f59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3889c4de64e8a4b1c226ea3fd3c6edc = $(`<div id="html_b3889c4de64e8a4b1c226ea3fd3c6edc" style="width: 100.0%; height: 100.0%;">Train Station: Bittern Railway Station (Bittern) (Stop ID: 19830)</div>`)[0];
+                popup_95c0f02f0d1f8b7cdd39012116185f59.setContent(html_b3889c4de64e8a4b1c226ea3fd3c6edc);
+            
+        
+
+        marker_cc7169dbcd062de2e7eb7b8b2b5d04e1.bindPopup(popup_95c0f02f0d1f8b7cdd39012116185f59)
+        ;
+
+        
+    
+    
+            var marker_8796a75f7e106f56883c34aede8e35db = L.marker(
+                [-38.30565897380473, 145.18598004542605],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5705259da153182bec484735555d110f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca4680365e3ae145cd46dd68d019cf44 = $(`<div id="html_ca4680365e3ae145cd46dd68d019cf44" style="width: 100.0%; height: 100.0%;">Train Station: Hastings Railway Station (Hastings) (Stop ID: 19831)</div>`)[0];
+                popup_5705259da153182bec484735555d110f.setContent(html_ca4680365e3ae145cd46dd68d019cf44);
+            
+        
+
+        marker_8796a75f7e106f56883c34aede8e35db.bindPopup(popup_5705259da153182bec484735555d110f)
+        ;
+
+        
+    
+    
+            var marker_4cd2d7b0eabce9e0179869e5a1b77840 = L.marker(
+                [-38.25981504276969, 145.18640091121645],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_758ff8fb0bf7b9250759f943ae69995a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1fd5659b709c2a57d0924922b8c2a34f = $(`<div id="html_1fd5659b709c2a57d0924922b8c2a34f" style="width: 100.0%; height: 100.0%;">Train Station: Tyabb Railway Station (Tyabb) (Stop ID: 19832)</div>`)[0];
+                popup_758ff8fb0bf7b9250759f943ae69995a.setContent(html_1fd5659b709c2a57d0924922b8c2a34f);
+            
+        
+
+        marker_4cd2d7b0eabce9e0179869e5a1b77840.bindPopup(popup_758ff8fb0bf7b9250759f943ae69995a)
+        ;
+
+        
+    
+    
+            var marker_fb9a2e8ee2c5105af49a369b7df9658f = L.marker(
+                [-38.22534198465516, 145.17624495783332],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ba88fe0beb8cf22cc419665acb1a19da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_149d875f1e26b001597c2e6616198e4e = $(`<div id="html_149d875f1e26b001597c2e6616198e4e" style="width: 100.0%; height: 100.0%;">Train Station: Somerville Railway Station (Somerville) (Stop ID: 19833)</div>`)[0];
+                popup_ba88fe0beb8cf22cc419665acb1a19da.setContent(html_149d875f1e26b001597c2e6616198e4e);
+            
+        
+
+        marker_fb9a2e8ee2c5105af49a369b7df9658f.bindPopup(popup_ba88fe0beb8cf22cc419665acb1a19da)
+        ;
+
+        
+    
+    
+            var marker_6f0c9beeee9c0813a68ad7f1e8cc83fc = L.marker(
+                [-38.194043042101164, 145.1605259068461],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_1f0f2dbb81d1230adcdf91b61f967d0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28e7f0ed0ed7060a6b906f5815f42fb1 = $(`<div id="html_28e7f0ed0ed7060a6b906f5815f42fb1" style="width: 100.0%; height: 100.0%;">Train Station: Baxter Railway Station (Baxter) (Stop ID: 19834)</div>`)[0];
+                popup_1f0f2dbb81d1230adcdf91b61f967d0f.setContent(html_28e7f0ed0ed7060a6b906f5815f42fb1);
+            
+        
+
+        marker_6f0c9beeee9c0813a68ad7f1e8cc83fc.bindPopup(popup_1f0f2dbb81d1230adcdf91b61f967d0f)
+        ;
+
+        
+    
+    
+            var marker_ba66e6e51d79a22846955ee822619c03 = L.marker(
+                [-37.85930802724669, 145.0582250497741],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_4998e46b92991fcc7414a60e98f2f1eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cce143581bb49a6da30dfdb4303b3c95 = $(`<div id="html_cce143581bb49a6da30dfdb4303b3c95" style="width: 100.0%; height: 100.0%;">Train Station: Glen Iris Railway Station (Glen Iris) (Stop ID: 19835)</div>`)[0];
+                popup_4998e46b92991fcc7414a60e98f2f1eb.setContent(html_cce143581bb49a6da30dfdb4303b3c95);
+            
+        
+
+        marker_ba66e6e51d79a22846955ee822619c03.bindPopup(popup_4998e46b92991fcc7414a60e98f2f1eb)
+        ;
+
+        
+    
+    
+            var marker_deff14767713f3c7e47419222b0be7cd = L.marker(
+                [-38.152034013128976, 145.1395339285365],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a587eea5e2a3637b81a11143df048292 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8de40489d2af7e0ca5a9ba02116d21b7 = $(`<div id="html_8de40489d2af7e0ca5a9ba02116d21b7" style="width: 100.0%; height: 100.0%;">Train Station: Leawarra Railway Station (Frankston) (Stop ID: 19836)</div>`)[0];
+                popup_a587eea5e2a3637b81a11143df048292.setContent(html_8de40489d2af7e0ca5a9ba02116d21b7);
+            
+        
+
+        marker_deff14767713f3c7e47419222b0be7cd.bindPopup(popup_a587eea5e2a3637b81a11143df048292)
+        ;
+
+        
+    
+    
+            var marker_c1fec94232336389a430b4079fbc8fcd = L.marker(
+                [-37.86895701673703, 145.06295114201313],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3389e661e4174e86ea23738b0af1fa2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d20fe6e3b70d3fe27debff257722ad4 = $(`<div id="html_2d20fe6e3b70d3fe27debff257722ad4" style="width: 100.0%; height: 100.0%;">Train Station: Darling Railway Station (Malvern East) (Stop ID: 19837)</div>`)[0];
+                popup_3389e661e4174e86ea23738b0af1fa2f.setContent(html_2d20fe6e3b70d3fe27debff257722ad4);
+            
+        
+
+        marker_c1fec94232336389a430b4079fbc8fcd.bindPopup(popup_3389e661e4174e86ea23738b0af1fa2f)
+        ;
+
+        
+    
+    
+            var marker_a1169c52829272b31e373defd7cf9dfb = L.marker(
+                [-37.87693002547972, 145.06939298848198],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_da19b6907c61b5827e7777b6d5610d3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_acb8088be46b56a4f6a35078945fb41a = $(`<div id="html_acb8088be46b56a4f6a35078945fb41a" style="width: 100.0%; height: 100.0%;">Train Station: East Malvern Railway Station (Malvern East) (Stop ID: 19838)</div>`)[0];
+                popup_da19b6907c61b5827e7777b6d5610d3c.setContent(html_acb8088be46b56a4f6a35078945fb41a);
+            
+        
+
+        marker_a1169c52829272b31e373defd7cf9dfb.bindPopup(popup_da19b6907c61b5827e7777b6d5610d3c)
+        ;
+
+        
+    
+    
+            var marker_a9226235c622c6d9bbe5e8e436ceba8c = L.marker(
+                [-37.874402019247384, 145.09066211307118],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9194b93762184c8d649fb61cea6064ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f4c3503b2f27b5c15cdff436d4b327a = $(`<div id="html_9f4c3503b2f27b5c15cdff436d4b327a" style="width: 100.0%; height: 100.0%;">Train Station: Holmesglen Railway Station (Malvern East) (Stop ID: 19839)</div>`)[0];
+                popup_9194b93762184c8d649fb61cea6064ca.setContent(html_9f4c3503b2f27b5c15cdff436d4b327a);
+            
+        
+
+        marker_a9226235c622c6d9bbe5e8e436ceba8c.bindPopup(popup_9194b93762184c8d649fb61cea6064ca)
+        ;
+
+        
+    
+    
+            var marker_bacf5fd9ed602f835a56df050723fd57 = L.marker(
+                [-37.87360300336732, 145.11209003619842],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5c6815bd5e8f22b07aa5746f42c48524 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7974450ffcace334066ca49035f854e9 = $(`<div id="html_7974450ffcace334066ca49035f854e9" style="width: 100.0%; height: 100.0%;">Train Station: Jordanville Railway Station (Mount Waverley) (Stop ID: 19840)</div>`)[0];
+                popup_5c6815bd5e8f22b07aa5746f42c48524.setContent(html_7974450ffcace334066ca49035f854e9);
+            
+        
+
+        marker_bacf5fd9ed602f835a56df050723fd57.bindPopup(popup_5c6815bd5e8f22b07aa5746f42c48524)
+        ;
+
+        
+    
+    
+            var marker_39b9ffc8b53ffecdd176e4149f7c757d = L.marker(
+                [-37.811980983068906, 144.95565385897856],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_fb0b24c50e124452e262fb6848f66b3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8c6ba306f2907556d2ba968b7c9c72a = $(`<div id="html_d8c6ba306f2907556d2ba968b7c9c72a" style="width: 100.0%; height: 100.0%;">Train Station: Flagstaff Railway Station (Melbourne City) (Stop ID: 19841)</div>`)[0];
+                popup_fb0b24c50e124452e262fb6848f66b3e.setContent(html_d8c6ba306f2907556d2ba968b7c9c72a);
+            
+        
+
+        marker_39b9ffc8b53ffecdd176e4149f7c757d.bindPopup(popup_fb0b24c50e124452e262fb6848f66b3e)
+        ;
+
+        
+    
+    
+            var marker_737bd6f5774f7ec55187cb4f69dc4b97 = L.marker(
+                [-37.80993897219737, 144.9625939477722],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_0ab0bcc549fb7c198f5f464fdd3a1458 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1fbca4a9a3b2951c720319c8c333eae = $(`<div id="html_e1fbca4a9a3b2951c720319c8c333eae" style="width: 100.0%; height: 100.0%;">Train Station: Melbourne Central Railway Station (Melbourne City) (Stop ID: 19842)</div>`)[0];
+                popup_0ab0bcc549fb7c198f5f464fdd3a1458.setContent(html_e1fbca4a9a3b2951c720319c8c333eae);
+            
+        
+
+        marker_737bd6f5774f7ec55187cb4f69dc4b97.bindPopup(popup_0ab0bcc549fb7c198f5f464fdd3a1458)
+        ;
+
+        
+    
+    
+            var marker_caf2bddb80bd5a283e63dee353c76db3 = L.marker(
+                [-37.81105398311787, 144.9729111811868],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ab6db76dc6ab7d55c7975b85deaf3775 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b863e941366ab582e060935d4ed858d3 = $(`<div id="html_b863e941366ab582e060935d4ed858d3" style="width: 100.0%; height: 100.0%;">Train Station: Parliament Railway Station (Melbourne City) (Stop ID: 19843)</div>`)[0];
+                popup_ab6db76dc6ab7d55c7975b85deaf3775.setContent(html_b863e941366ab582e060935d4ed858d3);
+            
+        
+
+        marker_caf2bddb80bd5a283e63dee353c76db3.bindPopup(popup_ab6db76dc6ab7d55c7975b85deaf3775)
+        ;
+
+        
+    
+    
+            var marker_2823111dfe6c4e841249c2fa54b05881 = L.marker(
+                [-37.90910196303172, 145.35529094228033],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_d237daef4712d191f70c035ef9c4b90c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5800aca70f3341984a0470fc2ca8e56 = $(`<div id="html_a5800aca70f3341984a0470fc2ca8e56" style="width: 100.0%; height: 100.0%;">Train Station: Belgrave Railway Station (Belgrave) (Stop ID: 19844)</div>`)[0];
+                popup_d237daef4712d191f70c035ef9c4b90c.setContent(html_a5800aca70f3341984a0470fc2ca8e56);
+            
+        
+
+        marker_2823111dfe6c4e841249c2fa54b05881.bindPopup(popup_d237daef4712d191f70c035ef9c4b90c)
+        ;
+
+        
+    
+    
+            var marker_80ed1eaaef5e5a348eab3938ff97059b = L.marker(
+                [-37.90811799418759, 145.3429951499282],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_97e72413cbadab4f3f91d02d3e5ec9fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa4124e1d96fe186a45bd1a445a868ab = $(`<div id="html_aa4124e1d96fe186a45bd1a445a868ab" style="width: 100.0%; height: 100.0%;">Train Station: Tecoma Railway Station (Tecoma) (Stop ID: 19845)</div>`)[0];
+                popup_97e72413cbadab4f3f91d02d3e5ec9fc.setContent(html_aa4124e1d96fe186a45bd1a445a868ab);
+            
+        
+
+        marker_80ed1eaaef5e5a348eab3938ff97059b.bindPopup(popup_97e72413cbadab4f3f91d02d3e5ec9fc)
+        ;
+
+        
+    
+    
+            var marker_96899dc27686de4dab47fbf7de5e8ea0 = L.marker(
+                [-37.903690983475485, 145.33133294736945],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_cdc83d8a18383b035fb3d8e818496a31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_355f78d193726afe7c6f74a7acab4658 = $(`<div id="html_355f78d193726afe7c6f74a7acab4658" style="width: 100.0%; height: 100.0%;">Train Station: Upwey Railway Station (Upwey) (Stop ID: 19846)</div>`)[0];
+                popup_cdc83d8a18383b035fb3d8e818496a31.setContent(html_355f78d193726afe7c6f74a7acab4658);
+            
+        
+
+        marker_96899dc27686de4dab47fbf7de5e8ea0.bindPopup(popup_cdc83d8a18383b035fb3d8e818496a31)
+        ;
+
+        
+    
+    
+            var marker_db7932e548291c5929ec992bb96eb67a = L.marker(
+                [-37.86831999881286, 145.0796558510017],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_53b42468e83fac1500312a5b04f2a4fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c6e0116509d75fdfb4dd2a6f968c2fa = $(`<div id="html_0c6e0116509d75fdfb4dd2a6f968c2fa" style="width: 100.0%; height: 100.0%;">Train Station: Alamein Railway Station (Ashburton) (Stop ID: 19847)</div>`)[0];
+                popup_53b42468e83fac1500312a5b04f2a4fe.setContent(html_0c6e0116509d75fdfb4dd2a6f968c2fa);
+            
+        
+
+        marker_db7932e548291c5929ec992bb96eb67a.bindPopup(popup_53b42468e83fac1500312a5b04f2a4fe)
+        ;
+
+        
+    
+    
+            var marker_76ab2c89ce17b00185dfd9cada75996e = L.marker(
+                [-37.86196798070856, 145.08134389547052],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a9159a0c33381d4c65268a89a9b1cb41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ff7edc7cc85ac093bc225a62cac0dd00 = $(`<div id="html_ff7edc7cc85ac093bc225a62cac0dd00" style="width: 100.0%; height: 100.0%;">Train Station: Ashburton Railway Station (Ashburton) (Stop ID: 19848)</div>`)[0];
+                popup_a9159a0c33381d4c65268a89a9b1cb41.setContent(html_ff7edc7cc85ac093bc225a62cac0dd00);
+            
+        
+
+        marker_76ab2c89ce17b00185dfd9cada75996e.bindPopup(popup_a9159a0c33381d4c65268a89a9b1cb41)
+        ;
+
+        
+    
+    
+            var marker_b5eba6724e37343703291d452718d715 = L.marker(
+                [-37.851562991336685, 145.08051084427572],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_6d43d258885a1a8f7b2091f4fe42dab1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41a7851775746a0414e1dbac64cc781b = $(`<div id="html_41a7851775746a0414e1dbac64cc781b" style="width: 100.0%; height: 100.0%;">Train Station: Burwood Railway Station (Glen Iris) (Stop ID: 19849)</div>`)[0];
+                popup_6d43d258885a1a8f7b2091f4fe42dab1.setContent(html_41a7851775746a0414e1dbac64cc781b);
+            
+        
+
+        marker_b5eba6724e37343703291d452718d715.bindPopup(popup_6d43d258885a1a8f7b2091f4fe42dab1)
+        ;
+
+        
+    
+    
+            var marker_e29b4b6240f5fffc9bc39bb2214c35bf = L.marker(
+                [-37.843984988466225, 145.0755601197322],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_cf0a115ba7e3b5a260477705946ce57d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38bc708c605c5ad7af9b376649291d00 = $(`<div id="html_38bc708c605c5ad7af9b376649291d00" style="width: 100.0%; height: 100.0%;">Train Station: Hartwell Railway Station (Camberwell) (Stop ID: 19850)</div>`)[0];
+                popup_cf0a115ba7e3b5a260477705946ce57d.setContent(html_38bc708c605c5ad7af9b376649291d00);
+            
+        
+
+        marker_e29b4b6240f5fffc9bc39bb2214c35bf.bindPopup(popup_cf0a115ba7e3b5a260477705946ce57d)
+        ;
+
+        
+    
+    
+            var marker_7b1ce03459fa2c1d3d710aa428281f24 = L.marker(
+                [-37.835715965394016, 145.07029800484113],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5b21926ecf18882c7cc8a34c970fc560 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a1d87daa9bc673c723b4c03acd6619a = $(`<div id="html_9a1d87daa9bc673c723b4c03acd6619a" style="width: 100.0%; height: 100.0%;">Train Station: Willison Railway Station (Camberwell) (Stop ID: 19851)</div>`)[0];
+                popup_5b21926ecf18882c7cc8a34c970fc560.setContent(html_9a1d87daa9bc673c723b4c03acd6619a);
+            
+        
+
+        marker_7b1ce03459fa2c1d3d710aa428281f24.bindPopup(popup_5b21926ecf18882c7cc8a34c970fc560)
+        ;
+
+        
+    
+    
+            var marker_421c25ff46e0daba319e7debec8dd819 = L.marker(
+                [-37.831505045420805, 145.0696460448304],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b5ce94e8341f5fad7b35cd0a764a4462 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a89c122a77255fb2a00ed2d1fb0c00f = $(`<div id="html_6a89c122a77255fb2a00ed2d1fb0c00f" style="width: 100.0%; height: 100.0%;">Train Station: Riversdale Railway Station (Camberwell) (Stop ID: 19852)</div>`)[0];
+                popup_b5ce94e8341f5fad7b35cd0a764a4462.setContent(html_6a89c122a77255fb2a00ed2d1fb0c00f);
+            
+        
+
+        marker_421c25ff46e0daba319e7debec8dd819.bindPopup(popup_b5ce94e8341f5fad7b35cd0a764a4462)
+        ;
+
+        
+    
+    
+            var marker_cee43dfa85311f8e0bfff4c931b62498 = L.marker(
+                [-37.826567020894245, 145.05869701396765],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_10eadc1c4b3b4575403b8fe55a9fc0a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7400fa87204889899c82be592c25947 = $(`<div id="html_c7400fa87204889899c82be592c25947" style="width: 100.0%; height: 100.0%;">Train Station: Camberwell Railway Station (Camberwell) (Stop ID: 19853)</div>`)[0];
+                popup_10eadc1c4b3b4575403b8fe55a9fc0a8.setContent(html_c7400fa87204889899c82be592c25947);
+            
+        
+
+        marker_cee43dfa85311f8e0bfff4c931b62498.bindPopup(popup_10eadc1c4b3b4575403b8fe55a9fc0a8)
+        ;
+
+        
+    
+    
+            var marker_32085e3d310032568dd311e442c13d54 = L.marker(
+                [-37.81830501305625, 144.96696399665555],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e3e61a64379f1158e2767e3109c11e58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0aa5ec31abc3405a582793f5388e5b7f = $(`<div id="html_0aa5ec31abc3405a582793f5388e5b7f" style="width: 100.0%; height: 100.0%;">Train Station: Flinders Street Railway Station (Melbourne City) (Stop ID: 19854)</div>`)[0];
+                popup_e3e61a64379f1158e2767e3109c11e58.setContent(html_0aa5ec31abc3405a582793f5388e5b7f);
+            
+        
+
+        marker_32085e3d310032568dd311e442c13d54.bindPopup(popup_e3e61a64379f1158e2767e3109c11e58)
+        ;
+
+        
+    
+    
+            var marker_e31ab4ee7f5efe79006873050f6ac600 = L.marker(
+                [-38.14299000537099, 145.12616208447614],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_2b8b0c856cfa84a65edb08839bff08ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_218333b067ebff2e6dce62e3e11a0872 = $(`<div id="html_218333b067ebff2e6dce62e3e11a0872" style="width: 100.0%; height: 100.0%;">Train Station: Frankston Railway Station (Frankston) (Stop ID: 19855)</div>`)[0];
+                popup_2b8b0c856cfa84a65edb08839bff08ba.setContent(html_218333b067ebff2e6dce62e3e11a0872);
+            
+        
+
+        marker_e31ab4ee7f5efe79006873050f6ac600.bindPopup(popup_2b8b0c856cfa84a65edb08839bff08ba)
+        ;
+
+        
+    
+    
+            var marker_8b09edd50c057c046cb8c7773ac58f91 = L.marker(
+                [-38.12174199466812, 145.13529493934251],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_521d968c2a4120d5210370f64e6e56c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fe16402f6c89634c9b1778c839ef2dc = $(`<div id="html_5fe16402f6c89634c9b1778c839ef2dc" style="width: 100.0%; height: 100.0%;">Train Station: Kananook Railway Station (Seaford) (Stop ID: 19856)</div>`)[0];
+                popup_521d968c2a4120d5210370f64e6e56c4.setContent(html_5fe16402f6c89634c9b1778c839ef2dc);
+            
+        
+
+        marker_8b09edd50c057c046cb8c7773ac58f91.bindPopup(popup_521d968c2a4120d5210370f64e6e56c4)
+        ;
+
+        
+    
+    
+            var marker_52ddf612824409d255378f975419f595 = L.marker(
+                [-38.10402099378123, 145.12822994038072],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_7d10ef3fe2f044100f7d2164206fb5ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d11f289be6915ccbff85eb80765fb68 = $(`<div id="html_3d11f289be6915ccbff85eb80765fb68" style="width: 100.0%; height: 100.0%;">Train Station: Seaford Railway Station (Seaford) (Stop ID: 19857)</div>`)[0];
+                popup_7d10ef3fe2f044100f7d2164206fb5ef.setContent(html_3d11f289be6915ccbff85eb80765fb68);
+            
+        
+
+        marker_52ddf612824409d255378f975419f595.bindPopup(popup_7d10ef3fe2f044100f7d2164206fb5ef)
+        ;
+
+        
+    
+    
+            var marker_b932272651dc05757675acebc4211e65 = L.marker(
+                [-38.076504033265415, 145.1228331806026],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b25bdb62677acd464142c2315906c1fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b18420b8e5dfb1260a863b030f2c034 = $(`<div id="html_7b18420b8e5dfb1260a863b030f2c034" style="width: 100.0%; height: 100.0%;">Train Station: Carrum Railway Station (Carrum) (Stop ID: 19858)</div>`)[0];
+                popup_b25bdb62677acd464142c2315906c1fa.setContent(html_7b18420b8e5dfb1260a863b030f2c034);
+            
+        
+
+        marker_b932272651dc05757675acebc4211e65.bindPopup(popup_b25bdb62677acd464142c2315906c1fa)
+        ;
+
+        
+    
+    
+            var marker_45b3fe5d63c1e085906de2dc1c760da3 = L.marker(
+                [-38.06294499455282, 145.11967993833284],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3ffe1633cb7374ee735da6020fd333c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c030d34799a6846add763577bdb637f = $(`<div id="html_0c030d34799a6846add763577bdb637f" style="width: 100.0%; height: 100.0%;">Train Station: Bonbeach Railway Station (Bonbeach) (Stop ID: 19859)</div>`)[0];
+                popup_3ffe1633cb7374ee735da6020fd333c6.setContent(html_0c030d34799a6846add763577bdb637f);
+            
+        
+
+        marker_45b3fe5d63c1e085906de2dc1c760da3.bindPopup(popup_3ffe1633cb7374ee735da6020fd333c6)
+        ;
+
+        
+    
+    
+            var marker_c493bd4d07dcea2158f4dcba35f264be = L.marker(
+                [-38.05195500582945, 145.1160410561567],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3f8c4ee24c1015ba0eef5601999d4bf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8307bbd9b7aed6043df09dbfb8611444 = $(`<div id="html_8307bbd9b7aed6043df09dbfb8611444" style="width: 100.0%; height: 100.0%;">Train Station: Chelsea Railway Station (Chelsea) (Stop ID: 19860)</div>`)[0];
+                popup_3f8c4ee24c1015ba0eef5601999d4bf7.setContent(html_8307bbd9b7aed6043df09dbfb8611444);
+            
+        
+
+        marker_c493bd4d07dcea2158f4dcba35f264be.bindPopup(popup_3f8c4ee24c1015ba0eef5601999d4bf7)
+        ;
+
+        
+    
+    
+            var marker_1a2ca518f869c1af099d8fb44217c769 = L.marker(
+                [-38.03805603411457, 145.10853614659555],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_56db374ba6c7a695388836650075ce22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ed8d18662424b3262edf38c8c4e5311 = $(`<div id="html_0ed8d18662424b3262edf38c8c4e5311" style="width: 100.0%; height: 100.0%;">Train Station: Edithvale Railway Station (Edithvale) (Stop ID: 19861)</div>`)[0];
+                popup_56db374ba6c7a695388836650075ce22.setContent(html_0ed8d18662424b3262edf38c8c4e5311);
+            
+        
+
+        marker_1a2ca518f869c1af099d8fb44217c769.bindPopup(popup_56db374ba6c7a695388836650075ce22)
+        ;
+
+        
+    
+    
+            var marker_2eb4a8a7f5d54ee1d5da81496ce9f718 = L.marker(
+                [-38.02722003428127, 145.10215009763107],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8f2e2d74415e16e290091c0e2206ee96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d15298502a5abdffe8ef20f51abf0c0c = $(`<div id="html_d15298502a5abdffe8ef20f51abf0c0c" style="width: 100.0%; height: 100.0%;">Train Station: Aspendale Railway Station (Aspendale) (Stop ID: 19862)</div>`)[0];
+                popup_8f2e2d74415e16e290091c0e2206ee96.setContent(html_d15298502a5abdffe8ef20f51abf0c0c);
+            
+        
+
+        marker_2eb4a8a7f5d54ee1d5da81496ce9f718.bindPopup(popup_8f2e2d74415e16e290091c0e2206ee96)
+        ;
+
+        
+    
+    
+            var marker_aac7563ec30cac5ea70efff58ae1c234 = L.marker(
+                [-38.006583036530465, 145.08765900709295],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b6d7761fbef92685809fee81b01398c8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_242ed5468a4a4dff6ba35b084811b5a6 = $(`<div id="html_242ed5468a4a4dff6ba35b084811b5a6" style="width: 100.0%; height: 100.0%;">Train Station: Mordialloc Railway Station (Mordialloc) (Stop ID: 19863)</div>`)[0];
+                popup_b6d7761fbef92685809fee81b01398c8.setContent(html_242ed5468a4a4dff6ba35b084811b5a6);
+            
+        
+
+        marker_aac7563ec30cac5ea70efff58ae1c234.bindPopup(popup_b6d7761fbef92685809fee81b01398c8)
+        ;
+
+        
+    
+    
+            var marker_559f7730a9a3de13a95737155d8ad765 = L.marker(
+                [-37.993078985669186, 145.0763269243707],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ed695afef4232d2270832b417b625191 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7d5391dbb9b8a7614d51aa221631149 = $(`<div id="html_a7d5391dbb9b8a7614d51aa221631149" style="width: 100.0%; height: 100.0%;">Train Station: Parkdale Railway Station (Parkdale) (Stop ID: 19864)</div>`)[0];
+                popup_ed695afef4232d2270832b417b625191.setContent(html_a7d5391dbb9b8a7614d51aa221631149);
+            
+        
+
+        marker_559f7730a9a3de13a95737155d8ad765.bindPopup(popup_ed695afef4232d2270832b417b625191)
+        ;
+
+        
+    
+    
+            var marker_567954e9a4682b8708d8fd934508b2c0 = L.marker(
+                [-37.98186498543101, 145.06516585321697],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_caf30588e5f277801ee66253404f2c46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f088cf0c8211abafb92568ba180efd = $(`<div id="html_85f088cf0c8211abafb92568ba180efd" style="width: 100.0%; height: 100.0%;">Train Station: Mentone Railway Station (Mentone) (Stop ID: 19865)</div>`)[0];
+                popup_caf30588e5f277801ee66253404f2c46.setContent(html_85f088cf0c8211abafb92568ba180efd);
+            
+        
+
+        marker_567954e9a4682b8708d8fd934508b2c0.bindPopup(popup_caf30588e5f277801ee66253404f2c46)
+        ;
+
+        
+    
+    
+            var marker_9de024fec54523bf8a00f52e78206928 = L.marker(
+                [-37.96665004267008, 145.05455809320318],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f2bdc698512c11929095ccb454649689 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cfc4ed2e53e562526305787d02a52593 = $(`<div id="html_cfc4ed2e53e562526305787d02a52593" style="width: 100.0%; height: 100.0%;">Train Station: Cheltenham Railway Station (Cheltenham) (Stop ID: 19866)</div>`)[0];
+                popup_f2bdc698512c11929095ccb454649689.setContent(html_cfc4ed2e53e562526305787d02a52593);
+            
+        
+
+        marker_9de024fec54523bf8a00f52e78206928.bindPopup(popup_f2bdc698512c11929095ccb454649689)
+        ;
+
+        
+    
+    
+            var marker_9c16fb7385fc9bc98393f56bc942d7f1 = L.marker(
+                [-37.89267201519074, 145.30753010573622],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_64f8cab8c806bb0806250edc8f83bc47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0e8fc6d726d2d8155580ccb9911a298 = $(`<div id="html_a0e8fc6d726d2d8155580ccb9911a298" style="width: 100.0%; height: 100.0%;">Train Station: Upper Ferntree Gully Railway Station (Upper Ferntree Gully) (Stop ID: 19867)</div>`)[0];
+                popup_64f8cab8c806bb0806250edc8f83bc47.setContent(html_a0e8fc6d726d2d8155580ccb9911a298);
+            
+        
+
+        marker_9c16fb7385fc9bc98393f56bc942d7f1.bindPopup(popup_64f8cab8c806bb0806250edc8f83bc47)
+        ;
+
+        
+    
+    
+            var marker_309318f237ea24d7bc5ef0d8de599040 = L.marker(
+                [-37.88169804430563, 145.2952508595173],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_00fa3b043aa1bc3c4807945d8e0c32a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e89049f490308b2c4e0d176afc5d8c6d = $(`<div id="html_e89049f490308b2c4e0d176afc5d8c6d" style="width: 100.0%; height: 100.0%;">Train Station: Ferntree Gully Railway Station (Ferntree Gully) (Stop ID: 19868)</div>`)[0];
+                popup_00fa3b043aa1bc3c4807945d8e0c32a9.setContent(html_e89049f490308b2c4e0d176afc5d8c6d);
+            
+        
+
+        marker_309318f237ea24d7bc5ef0d8de599040.bindPopup(popup_00fa3b043aa1bc3c4807945d8e0c32a9)
+        ;
+
+        
+    
+    
+            var marker_dc07ab292da4e45ddbfd7a36e4f07267 = L.marker(
+                [-37.86045201284621, 145.28438498378276],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8053997ee54acf93ffc8e39f63ba71dd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_614b1d06e8e29087ee5b3395ccdc8c96 = $(`<div id="html_614b1d06e8e29087ee5b3395ccdc8c96" style="width: 100.0%; height: 100.0%;">Train Station: Boronia Railway Station (Boronia) (Stop ID: 19869)</div>`)[0];
+                popup_8053997ee54acf93ffc8e39f63ba71dd.setContent(html_614b1d06e8e29087ee5b3395ccdc8c96);
+            
+        
+
+        marker_dc07ab292da4e45ddbfd7a36e4f07267.bindPopup(popup_8053997ee54acf93ffc8e39f63ba71dd)
+        ;
+
+        
+    
+    
+            var marker_3053f978d4b80e4bb220c84f73a06f30 = L.marker(
+                [-37.84173003269863, 145.26813602050083],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_dbadb01909b97313daecb7f675be0d30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_862cd109d052496a9648f2fdf8082953 = $(`<div id="html_862cd109d052496a9648f2fdf8082953" style="width: 100.0%; height: 100.0%;">Train Station: Bayswater Railway Station (Bayswater) (Stop ID: 19870)</div>`)[0];
+                popup_dbadb01909b97313daecb7f675be0d30.setContent(html_862cd109d052496a9648f2fdf8082953);
+            
+        
+
+        marker_3053f978d4b80e4bb220c84f73a06f30.bindPopup(popup_dbadb01909b97313daecb7f675be0d30)
+        ;
+
+        
+    
+    
+            var marker_012480d65cc1801d1898617b0d769db0 = L.marker(
+                [-37.828322013500426, 145.24455493593294],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_cb29f502179fb2d1cdffdc7b33cd62e5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3af57b03c1320274204beb4ef03c83f = $(`<div id="html_b3af57b03c1320274204beb4ef03c83f" style="width: 100.0%; height: 100.0%;">Train Station: Heathmont Railway Station (Heathmont) (Stop ID: 19871)</div>`)[0];
+                popup_cb29f502179fb2d1cdffdc7b33cd62e5.setContent(html_b3af57b03c1320274204beb4ef03c83f);
+            
+        
+
+        marker_012480d65cc1801d1898617b0d769db0.bindPopup(popup_cb29f502179fb2d1cdffdc7b33cd62e5)
+        ;
+
+        
+    
+    
+            var marker_ee9855fd1078b66918015196be079800 = L.marker(
+                [-37.948425037176236, 145.04187207003986],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b0d5381674087088aa2d2f36d08e6f4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2a97084d21df16ca82c7ae865872c6a8 = $(`<div id="html_2a97084d21df16ca82c7ae865872c6a8" style="width: 100.0%; height: 100.0%;">Train Station: Highett Railway Station (Highett) (Stop ID: 19872)</div>`)[0];
+                popup_b0d5381674087088aa2d2f36d08e6f4e.setContent(html_2a97084d21df16ca82c7ae865872c6a8);
+            
+        
+
+        marker_ee9855fd1078b66918015196be079800.bindPopup(popup_b0d5381674087088aa2d2f36d08e6f4e)
+        ;
+
+        
+    
+    
+            var marker_d2e3003497f089b001840eb4e293ff32 = L.marker(
+                [-37.87950402884809, 145.16205804677077],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8e833b67c4901597d5e8e87b44c61102 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_807c2aa32a5f653d19280af48bdb10e4 = $(`<div id="html_807c2aa32a5f653d19280af48bdb10e4" style="width: 100.0%; height: 100.0%;">Train Station: Glen Waverley Railway Station (Glen Waverley) (Stop ID: 19873)</div>`)[0];
+                popup_8e833b67c4901597d5e8e87b44c61102.setContent(html_807c2aa32a5f653d19280af48bdb10e4);
+            
+        
+
+        marker_d2e3003497f089b001840eb4e293ff32.bindPopup(popup_8e833b67c4901597d5e8e87b44c61102)
+        ;
+
+        
+    
+    
+            var marker_a8c09405cc6bd1cae3204732e8ee7d39 = L.marker(
+                [-37.87623001198126, 145.14977988400065],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_14fc615c5cd4790bbfb2d8bb69a2f817 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_361f78e6ceeab222f230575145f87541 = $(`<div id="html_361f78e6ceeab222f230575145f87541" style="width: 100.0%; height: 100.0%;">Train Station: Syndal Railway Station (Glen Waverley) (Stop ID: 19874)</div>`)[0];
+                popup_14fc615c5cd4790bbfb2d8bb69a2f817.setContent(html_361f78e6ceeab222f230575145f87541);
+            
+        
+
+        marker_a8c09405cc6bd1cae3204732e8ee7d39.bindPopup(popup_14fc615c5cd4790bbfb2d8bb69a2f817)
+        ;
+
+        
+    
+    
+            var marker_bfd5271e8bc3060ff2d5a908352919e7 = L.marker(
+                [-37.87525504140691, 145.1280560390715],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_4069d10ac76e42d1e4e8e03d6853d656 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d199de94f4a7b7460930d144835bc64 = $(`<div id="html_7d199de94f4a7b7460930d144835bc64" style="width: 100.0%; height: 100.0%;">Train Station: Mount Waverley Railway Station (Mount Waverley) (Stop ID: 19875)</div>`)[0];
+                popup_4069d10ac76e42d1e4e8e03d6853d656.setContent(html_7d199de94f4a7b7460930d144835bc64);
+            
+        
+
+        marker_bfd5271e8bc3060ff2d5a908352919e7.bindPopup(popup_4069d10ac76e42d1e4e8e03d6853d656)
+        ;
+
+        
+    
+    
+            var marker_8a38f21f718a94955ec69953f1a52d58 = L.marker(
+                [-37.75551804148801, 145.34771006372208],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_897a826c02386a5217f147cb7e63e045 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1ef3362e66bf21c9eae58248b926f6b = $(`<div id="html_f1ef3362e66bf21c9eae58248b926f6b" style="width: 100.0%; height: 100.0%;">Train Station: Lilydale Railway Station (Lilydale) (Stop ID: 19876)</div>`)[0];
+                popup_897a826c02386a5217f147cb7e63e045.setContent(html_f1ef3362e66bf21c9eae58248b926f6b);
+            
+        
+
+        marker_8a38f21f718a94955ec69953f1a52d58.bindPopup(popup_897a826c02386a5217f147cb7e63e045)
+        ;
+
+        
+    
+    
+            var marker_355745b5457b918bfed1b2d36c3e696e = L.marker(
+                [-37.78474896242301, 145.312401980717],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_06315e3c7425fc3be8d647e76f348624 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_072d46df8f696ad5c55dde6867b540d6 = $(`<div id="html_072d46df8f696ad5c55dde6867b540d6" style="width: 100.0%; height: 100.0%;">Train Station: Mooroolbark Railway Station (Mooroolbark) (Stop ID: 19877)</div>`)[0];
+                popup_06315e3c7425fc3be8d647e76f348624.setContent(html_072d46df8f696ad5c55dde6867b540d6);
+            
+        
+
+        marker_355745b5457b918bfed1b2d36c3e696e.bindPopup(popup_06315e3c7425fc3be8d647e76f348624)
+        ;
+
+        
+    
+    
+            var marker_0e26e91f0ab7ee97ba1ca456bac38a75 = L.marker(
+                [-37.795437003004096, 145.28059813649503],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f3f75f0e794a5a999b375d6ff30f9623 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54f97ecaceb2611953e95c0984447587 = $(`<div id="html_54f97ecaceb2611953e95c0984447587" style="width: 100.0%; height: 100.0%;">Train Station: Croydon Railway Station (Croydon) (Stop ID: 19878)</div>`)[0];
+                popup_f3f75f0e794a5a999b375d6ff30f9623.setContent(html_54f97ecaceb2611953e95c0984447587);
+            
+        
+
+        marker_0e26e91f0ab7ee97ba1ca456bac38a75.bindPopup(popup_f3f75f0e794a5a999b375d6ff30f9623)
+        ;
+
+        
+    
+    
+            var marker_46376212cec58290d63347198cc8029a = L.marker(
+                [-37.811968020901645, 145.25019111735213],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_722adaa50962495f1651d748e66fcc72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5a6fa142be1e9cce980fa4805d00d7b = $(`<div id="html_c5a6fa142be1e9cce980fa4805d00d7b" style="width: 100.0%; height: 100.0%;">Train Station: Ringwood East Railway Station (Ringwood East) (Stop ID: 19879)</div>`)[0];
+                popup_722adaa50962495f1651d748e66fcc72.setContent(html_c5a6fa142be1e9cce980fa4805d00d7b);
+            
+        
+
+        marker_46376212cec58290d63347198cc8029a.bindPopup(popup_722adaa50962495f1651d748e66fcc72)
+        ;
+
+        
+    
+    
+            var marker_84e26bcb2acfcd9efb6d647fea1795b0 = L.marker(
+                [-38.080613971994666, 145.4863791670269],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_bf5fbe38a99c7feaff680ed4a1818b7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_067acdcf4bad6b182d552aeb0f6efd5e = $(`<div id="html_067acdcf4bad6b182d552aeb0f6efd5e" style="width: 100.0%; height: 100.0%;">Train Station: Pakenham Railway Station (Pakenham) (Stop ID: 19880)</div>`)[0];
+                popup_bf5fbe38a99c7feaff680ed4a1818b7d.setContent(html_067acdcf4bad6b182d552aeb0f6efd5e);
+            
+        
+
+        marker_84e26bcb2acfcd9efb6d647fea1795b0.bindPopup(popup_bf5fbe38a99c7feaff680ed4a1818b7d)
+        ;
+
+        
+    
+    
+            var marker_3bfd2dc20224bdae357f796152bf2cf4 = L.marker(
+                [-38.06614602358953, 145.41098691161596],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_52a8e94bbeaee0c48c1249daeba880e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80241184fdf6b64cd1a49c914f797f23 = $(`<div id="html_80241184fdf6b64cd1a49c914f797f23" style="width: 100.0%; height: 100.0%;">Train Station: Officer Railway Station (Officer) (Stop ID: 19881)</div>`)[0];
+                popup_52a8e94bbeaee0c48c1249daeba880e1.setContent(html_80241184fdf6b64cd1a49c914f797f23);
+            
+        
+
+        marker_3bfd2dc20224bdae357f796152bf2cf4.bindPopup(popup_52a8e94bbeaee0c48c1249daeba880e1)
+        ;
+
+        
+    
+    
+            var marker_8be06436dfc962e7e284bfbfc63ff046 = L.marker(
+                [-38.05083099268969, 145.36607402041432],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_293576ab0f572be5dcabd82da6c370f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a55d6279b8971be8f484f321fcb57339 = $(`<div id="html_a55d6279b8971be8f484f321fcb57339" style="width: 100.0%; height: 100.0%;">Train Station: Beaconsfield Railway Station (Beaconsfield) (Stop ID: 19882)</div>`)[0];
+                popup_293576ab0f572be5dcabd82da6c370f3.setContent(html_a55d6279b8971be8f484f321fcb57339);
+            
+        
+
+        marker_8be06436dfc962e7e284bfbfc63ff046.bindPopup(popup_293576ab0f572be5dcabd82da6c370f3)
+        ;
+
+        
+    
+    
+            var marker_4c950680985518b314076b43f8d6c292 = L.marker(
+                [-38.04040800417337, 145.345726106732],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_011895f70d054caff6022cb6d045d3ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2da1799a4ae6a618f2097f470ef3df9 = $(`<div id="html_a2da1799a4ae6a618f2097f470ef3df9" style="width: 100.0%; height: 100.0%;">Train Station: Berwick Railway Station (Berwick) (Stop ID: 19883)</div>`)[0];
+                popup_011895f70d054caff6022cb6d045d3ed.setContent(html_a2da1799a4ae6a618f2097f470ef3df9);
+            
+        
+
+        marker_4c950680985518b314076b43f8d6c292.bindPopup(popup_011895f70d054caff6022cb6d045d3ed)
+        ;
+
+        
+    
+    
+            var marker_dceefaa3f8c174a466a56b5069047781 = L.marker(
+                [-38.02780899067889, 145.30396899348813],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_2e13bdfce54ee999cf741c7d3216fba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2feb1712d085fbbe1b3dd80f8b72325 = $(`<div id="html_a2feb1712d085fbbe1b3dd80f8b72325" style="width: 100.0%; height: 100.0%;">Train Station: Narre Warren Railway Station (Narre Warren) (Stop ID: 19884)</div>`)[0];
+                popup_2e13bdfce54ee999cf741c7d3216fba8.setContent(html_a2feb1712d085fbbe1b3dd80f8b72325);
+            
+        
+
+        marker_dceefaa3f8c174a466a56b5069047781.bindPopup(popup_2e13bdfce54ee999cf741c7d3216fba8)
+        ;
+
+        
+    
+    
+            var marker_d1391fb6b3aff23a5a02bdfb03c3ce18 = L.marker(
+                [-38.0177399723026, 145.26977691372707],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ef9d9205a8cfa6803fe4c71b8f509ba0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_746366b5775b3b3d5e62a8478772711d = $(`<div id="html_746366b5775b3b3d5e62a8478772711d" style="width: 100.0%; height: 100.0%;">Train Station: Hallam Railway Station (Hallam) (Stop ID: 19885)</div>`)[0];
+                popup_ef9d9205a8cfa6803fe4c71b8f509ba0.setContent(html_746366b5775b3b3d5e62a8478772711d);
+            
+        
+
+        marker_d1391fb6b3aff23a5a02bdfb03c3ce18.bindPopup(popup_ef9d9205a8cfa6803fe4c71b8f509ba0)
+        ;
+
+        
+    
+    
+            var marker_2897ea392af3a16080ed85fddb84a432 = L.marker(
+                [-38.099537015167755, 145.2805988876704],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_bcb4ca1bb1ca0d838ee7ab859a7e36de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8e916e4916eb7f50c9e1521d3928121 = $(`<div id="html_c8e916e4916eb7f50c9e1521d3928121" style="width: 100.0%; height: 100.0%;">Train Station: Cranbourne Railway Station (Cranbourne) (Stop ID: 19886)</div>`)[0];
+                popup_bcb4ca1bb1ca0d838ee7ab859a7e36de.setContent(html_c8e916e4916eb7f50c9e1521d3928121);
+            
+        
+
+        marker_2897ea392af3a16080ed85fddb84a432.bindPopup(popup_bcb4ca1bb1ca0d838ee7ab859a7e36de)
+        ;
+
+        
+    
+    
+            var marker_75ebd5c2bfd1e0a70d35ad21a6ad6042 = L.marker(
+                [-38.07900000428343, 145.26351110606686],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8613b3deb667f69ad58eecc71bd86ea1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c96cba185f20a480e414d3ea6e8b85f7 = $(`<div id="html_c96cba185f20a480e414d3ea6e8b85f7" style="width: 100.0%; height: 100.0%;">Train Station: Merinda Park Railway Station (Cranbourne North) (Stop ID: 19887)</div>`)[0];
+                popup_8613b3deb667f69ad58eecc71bd86ea1.setContent(html_c96cba185f20a480e414d3ea6e8b85f7);
+            
+        
+
+        marker_75ebd5c2bfd1e0a70d35ad21a6ad6042.bindPopup(popup_8613b3deb667f69ad58eecc71bd86ea1)
+        ;
+
+        
+    
+    
+            var marker_8422728ced8a7870f3b592b46be98991 = L.marker(
+                [-37.98996804320864, 145.20972494168106],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_308265ca8855e2032d0569c0dd475df9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2797489a0cd286c3e9b4a3555ca3541 = $(`<div id="html_e2797489a0cd286c3e9b4a3555ca3541" style="width: 100.0%; height: 100.0%;">Train Station: Dandenong Railway Station (Dandenong) (Stop ID: 19888)</div>`)[0];
+                popup_308265ca8855e2032d0569c0dd475df9.setContent(html_e2797489a0cd286c3e9b4a3555ca3541);
+            
+        
+
+        marker_8422728ced8a7870f3b592b46be98991.bindPopup(popup_308265ca8855e2032d0569c0dd475df9)
+        ;
+
+        
+    
+    
+            var marker_61afe82319d6c02716a8ed2f35af2584 = L.marker(
+                [-37.97825499531765, 145.19160002133484],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_86d20ddb59890158c7d460563c6198e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42db46a8d916f9f6b44d4a12142115f3 = $(`<div id="html_42db46a8d916f9f6b44d4a12142115f3" style="width: 100.0%; height: 100.0%;">Train Station: Yarraman Railway Station (Noble Park) (Stop ID: 19889)</div>`)[0];
+                popup_86d20ddb59890158c7d460563c6198e7.setContent(html_42db46a8d916f9f6b44d4a12142115f3);
+            
+        
+
+        marker_61afe82319d6c02716a8ed2f35af2584.bindPopup(popup_86d20ddb59890158c7d460563c6198e7)
+        ;
+
+        
+    
+    
+            var marker_92991ea46901b1c830ff9fc7e66c3ab9 = L.marker(
+                [-37.96662798649904, 145.17632485727145],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_06eb371f52313bdd0828e4bbf71a308f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d40eb2d8d43711e14c0ad080990f151d = $(`<div id="html_d40eb2d8d43711e14c0ad080990f151d" style="width: 100.0%; height: 100.0%;">Train Station: Noble Park Railway Station (Noble Park) (Stop ID: 19890)</div>`)[0];
+                popup_06eb371f52313bdd0828e4bbf71a308f.setContent(html_d40eb2d8d43711e14c0ad080990f151d);
+            
+        
+
+        marker_92991ea46901b1c830ff9fc7e66c3ab9.bindPopup(popup_06eb371f52313bdd0828e4bbf71a308f)
+        ;
+
+        
+    
+    
+            var marker_ca22b83096d1fe3878120fb9399377cd = L.marker(
+                [-37.9565049634813, 145.16282594045538],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_d842815bbd8254463427da0a31ef7776 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd2953046bf92c312505271d07c18a25 = $(`<div id="html_dd2953046bf92c312505271d07c18a25" style="width: 100.0%; height: 100.0%;">Train Station: Sandown Park Railway Station (Springvale) (Stop ID: 19891)</div>`)[0];
+                popup_d842815bbd8254463427da0a31ef7776.setContent(html_dd2953046bf92c312505271d07c18a25);
+            
+        
+
+        marker_ca22b83096d1fe3878120fb9399377cd.bindPopup(popup_d842815bbd8254463427da0a31ef7776)
+        ;
+
+        
+    
+    
+            var marker_18e2f70b4b3b7a84cb3693d009b1dcae = L.marker(
+                [-37.82589399751228, 145.06818984612514],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_46326b95333dd48d53ed0a03d409e2e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57921f28feed60e9d3449aff59457d40 = $(`<div id="html_57921f28feed60e9d3449aff59457d40" style="width: 100.0%; height: 100.0%;">Train Station: East Camberwell Railway Station (Camberwell) (Stop ID: 19892)</div>`)[0];
+                popup_46326b95333dd48d53ed0a03d409e2e9.setContent(html_57921f28feed60e9d3449aff59457d40);
+            
+        
+
+        marker_18e2f70b4b3b7a84cb3693d009b1dcae.bindPopup(popup_46326b95333dd48d53ed0a03d409e2e9)
+        ;
+
+        
+    
+    
+            var marker_06d98d9388d75abd8374efd1e868dc25 = L.marker(
+                [-37.824485052015234, 145.08122400522683],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_c224fccbcaeba5080ebfd792e324725d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_573d44bb72101c1098284058347fe288 = $(`<div id="html_573d44bb72101c1098284058347fe288" style="width: 100.0%; height: 100.0%;">Train Station: Canterbury Railway Station (Canterbury) (Stop ID: 19893)</div>`)[0];
+                popup_c224fccbcaeba5080ebfd792e324725d.setContent(html_573d44bb72101c1098284058347fe288);
+            
+        
+
+        marker_06d98d9388d75abd8374efd1e868dc25.bindPopup(popup_c224fccbcaeba5080ebfd792e324725d)
+        ;
+
+        
+    
+    
+            var marker_191b683529460cfdd9b8be815a11f80d = L.marker(
+                [-37.824300013259794, 145.08864792992347],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ecb5effeefdc126b538ca3859172e763 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53559aecc99e0f6009a7aa091c1d898c = $(`<div id="html_53559aecc99e0f6009a7aa091c1d898c" style="width: 100.0%; height: 100.0%;">Train Station: Chatham Railway Station (Surrey Hills) (Stop ID: 19894)</div>`)[0];
+                popup_ecb5effeefdc126b538ca3859172e763.setContent(html_53559aecc99e0f6009a7aa091c1d898c);
+            
+        
+
+        marker_191b683529460cfdd9b8be815a11f80d.bindPopup(popup_ecb5effeefdc126b538ca3859172e763)
+        ;
+
+        
+    
+    
+            var marker_95fc837a86d601e48b3d2360da6cc9b9 = L.marker(
+                [-37.82414800244947, 145.09877510312708],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_6d63118a9add134419a2dbb1068450cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_248de97b59d8203667513427fe043f01 = $(`<div id="html_248de97b59d8203667513427fe043f01" style="width: 100.0%; height: 100.0%;">Train Station: Surrey Hills Railway Station (Surrey Hills) (Stop ID: 19895)</div>`)[0];
+                popup_6d63118a9add134419a2dbb1068450cb.setContent(html_248de97b59d8203667513427fe043f01);
+            
+        
+
+        marker_95fc837a86d601e48b3d2360da6cc9b9.bindPopup(popup_6d63118a9add134419a2dbb1068450cb)
+        ;
+
+        
+    
+    
+            var marker_c9737426c3a335f2d192da74fae0ec91 = L.marker(
+                [-37.819427052222316, 145.1055301411415],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_566fd15d81b5dd95c97332b21e5e8815 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dfcf020729731d1cdca5507bd371500 = $(`<div id="html_3dfcf020729731d1cdca5507bd371500" style="width: 100.0%; height: 100.0%;">Train Station: Mont Albert Railway Station (Mont Albert) (Stop ID: 19896)</div>`)[0];
+                popup_566fd15d81b5dd95c97332b21e5e8815.setContent(html_3dfcf020729731d1cdca5507bd371500);
+            
+        
+
+        marker_c9737426c3a335f2d192da74fae0ec91.bindPopup(popup_566fd15d81b5dd95c97332b21e5e8815)
+        ;
+
+        
+    
+    
+            var marker_72671558b555146a457375612e6bff7c = L.marker(
+                [-37.82078002325073, 145.1407028348687],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9dfca1a18b9e127ef877735f2d3ca91c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a43618b8b67e32e7875d218acc8b7f4 = $(`<div id="html_1a43618b8b67e32e7875d218acc8b7f4" style="width: 100.0%; height: 100.0%;">Train Station: Laburnum Railway Station (Blackburn) (Stop ID: 19897)</div>`)[0];
+                popup_9dfca1a18b9e127ef877735f2d3ca91c.setContent(html_1a43618b8b67e32e7875d218acc8b7f4);
+            
+        
+
+        marker_72671558b555146a457375612e6bff7c.bindPopup(popup_9dfca1a18b9e127ef877735f2d3ca91c)
+        ;
+
+        
+    
+    
+            var marker_a96cc2bd2a50e31011531277ef4e6383 = L.marker(
+                [-37.820071002378896, 145.1500138764687],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_1d1e7b3bcf9452689dd33fd70bc0c59b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_085289ffed68bd2a6e403aeaf7d3dd0e = $(`<div id="html_085289ffed68bd2a6e403aeaf7d3dd0e" style="width: 100.0%; height: 100.0%;">Train Station: Blackburn Railway Station (Blackburn) (Stop ID: 19898)</div>`)[0];
+                popup_1d1e7b3bcf9452689dd33fd70bc0c59b.setContent(html_085289ffed68bd2a6e403aeaf7d3dd0e);
+            
+        
+
+        marker_a96cc2bd2a50e31011531277ef4e6383.bindPopup(popup_1d1e7b3bcf9452689dd33fd70bc0c59b)
+        ;
+
+        
+    
+    
+            var marker_3e8fb147a8816c9773e2ec933fa2d330 = L.marker(
+                [-37.82042802941446, 145.1752369288804],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3e516195e03b825b3e437b2312a4c73d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2067fa8602787654106eebfc825459dc = $(`<div id="html_2067fa8602787654106eebfc825459dc" style="width: 100.0%; height: 100.0%;">Train Station: Nunawading Railway Station (Nunawading) (Stop ID: 19899)</div>`)[0];
+                popup_3e516195e03b825b3e437b2312a4c73d.setContent(html_2067fa8602787654106eebfc825459dc);
+            
+        
+
+        marker_3e8fb147a8816c9773e2ec933fa2d330.bindPopup(popup_3e516195e03b825b3e437b2312a4c73d)
+        ;
+
+        
+    
+    
+            var marker_936173eebd1ea3d9e3bf1ec7a05d50de = L.marker(
+                [-37.818087035153475, 145.1928920581536],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_373c3620424f5979e0c407d6c8c50c3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbbd8a301cd63429c8cfa532d42ff393 = $(`<div id="html_cbbd8a301cd63429c8cfa532d42ff393" style="width: 100.0%; height: 100.0%;">Train Station: Mitcham Railway Station (Mitcham) (Stop ID: 19900)</div>`)[0];
+                popup_373c3620424f5979e0c407d6c8c50c3a.setContent(html_cbbd8a301cd63429c8cfa532d42ff393);
+            
+        
+
+        marker_936173eebd1ea3d9e3bf1ec7a05d50de.bindPopup(popup_373c3620424f5979e0c407d6c8c50c3a)
+        ;
+
+        
+    
+    
+            var marker_d86c20db0ee5b35e894693b8ab1d6819 = L.marker(
+                [-37.81883502338564, 145.21354994696432],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_d5a9a56de6a7fa29d2ce94e658d29797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94882bd95bb737918c2d0bb18ac88be0 = $(`<div id="html_94882bd95bb737918c2d0bb18ac88be0" style="width: 100.0%; height: 100.0%;">Train Station: Heatherdale Railway Station (Ringwood) (Stop ID: 19901)</div>`)[0];
+                popup_d5a9a56de6a7fa29d2ce94e658d29797.setContent(html_94882bd95bb737918c2d0bb18ac88be0);
+            
+        
+
+        marker_d86c20db0ee5b35e894693b8ab1d6819.bindPopup(popup_d5a9a56de6a7fa29d2ce94e658d29797)
+        ;
+
+        
+    
+    
+            var marker_e803f47f0015e8f29df2347e60543d79 = L.marker(
+                [-37.81566000007894, 145.2294741698739],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_6a61ea77ed3ededbc3d6d75574890c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7ed79193eb3fc39581f6bd0e68da4dc = $(`<div id="html_a7ed79193eb3fc39581f6bd0e68da4dc" style="width: 100.0%; height: 100.0%;">Train Station: Ringwood Railway Station (Ringwood) (Stop ID: 19902)</div>`)[0];
+                popup_6a61ea77ed3ededbc3d6d75574890c26.setContent(html_a7ed79193eb3fc39581f6bd0e68da4dc);
+            
+        
+
+        marker_e803f47f0015e8f29df2347e60543d79.bindPopup(popup_6a61ea77ed3ededbc3d6d75574890c26)
+        ;
+
+        
+    
+    
+            var marker_7d23a6e52016e6209a126943d7773f47 = L.marker(
+                [-37.82239804230204, 145.04584392844583],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e4f20cc0595d1321b8da8215cb39a20b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31574cc25c7124775b8fc5db9a2b6344 = $(`<div id="html_31574cc25c7124775b8fc5db9a2b6344" style="width: 100.0%; height: 100.0%;">Train Station: Auburn Railway Station (Hawthorn East) (Stop ID: 19903)</div>`)[0];
+                popup_e4f20cc0595d1321b8da8215cb39a20b.setContent(html_31574cc25c7124775b8fc5db9a2b6344);
+            
+        
+
+        marker_7d23a6e52016e6209a126943d7773f47.bindPopup(popup_e4f20cc0595d1321b8da8215cb39a20b)
+        ;
+
+        
+    
+    
+            var marker_e5ccdf61361c0e717e08f805fffa7241 = L.marker(
+                [-37.821466991314885, 145.03643891857303],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a6d6fa0428b84a039c91d21491efe6b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a630494e2ea8979612ed4f88d9b741e = $(`<div id="html_1a630494e2ea8979612ed4f88d9b741e" style="width: 100.0%; height: 100.0%;">Train Station: Glenferrie Railway Station (Hawthorn) (Stop ID: 19904)</div>`)[0];
+                popup_a6d6fa0428b84a039c91d21491efe6b3.setContent(html_1a630494e2ea8979612ed4f88d9b741e);
+            
+        
+
+        marker_e5ccdf61361c0e717e08f805fffa7241.bindPopup(popup_a6d6fa0428b84a039c91d21491efe6b3)
+        ;
+
+        
+    
+    
+            var marker_16818229145901b8c28ff03b4aab457c = L.marker(
+                [-37.821825996611395, 145.02289894827368],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_84952c42d84a2288d58fb0a4a2cd1526 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_383f4ade97acaeb176c5a8e461aa7f36 = $(`<div id="html_383f4ade97acaeb176c5a8e461aa7f36" style="width: 100.0%; height: 100.0%;">Train Station: Hawthorn Railway Station (Hawthorn) (Stop ID: 19905)</div>`)[0];
+                popup_84952c42d84a2288d58fb0a4a2cd1526.setContent(html_383f4ade97acaeb176c5a8e461aa7f36);
+            
+        
+
+        marker_16818229145901b8c28ff03b4aab457c.bindPopup(popup_84952c42d84a2288d58fb0a4a2cd1526)
+        ;
+
+        
+    
+    
+            var marker_c74e968019145a7e1d1557ec6fac8c7d = L.marker(
+                [-37.82755998022155, 145.0075550556105],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b1057157e4456c77ba11b73910fca547 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24a012eb2cd2276d87eba130b062cdd6 = $(`<div id="html_24a012eb2cd2276d87eba130b062cdd6" style="width: 100.0%; height: 100.0%;">Train Station: Burnley Railway Station (Burnley) (Stop ID: 19906)</div>`)[0];
+                popup_b1057157e4456c77ba11b73910fca547.setContent(html_24a012eb2cd2276d87eba130b062cdd6);
+            
+        
+
+        marker_c74e968019145a7e1d1557ec6fac8c7d.bindPopup(popup_b1057157e4456c77ba11b73910fca547)
+        ;
+
+        
+    
+    
+            var marker_defabaec715af9e595427b66acddf9ee = L.marker(
+                [-37.82639997289394, 144.9970661029343],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_7269cb52b00552c62ce24c0a48c4f495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a471fad1e403bd3d43acfc72ad64df4e = $(`<div id="html_a471fad1e403bd3d43acfc72ad64df4e" style="width: 100.0%; height: 100.0%;">Train Station: East Richmond Railway Station (Richmond) (Stop ID: 19907)</div>`)[0];
+                popup_7269cb52b00552c62ce24c0a48c4f495.setContent(html_a471fad1e403bd3d43acfc72ad64df4e);
+            
+        
+
+        marker_defabaec715af9e595427b66acddf9ee.bindPopup(popup_7269cb52b00552c62ce24c0a48c4f495)
+        ;
+
+        
+    
+    
+            var marker_df9c64443e376abdc8d590a2f330b57e = L.marker(
+                [-37.82407401385715, 144.9901641806745],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_89780ffc323a6e178300723aed3379f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e5eee2dd445038583a594aaba1fb630 = $(`<div id="html_1e5eee2dd445038583a594aaba1fb630" style="width: 100.0%; height: 100.0%;">Train Station: Richmond Railway Station (Richmond) (Stop ID: 19908)</div>`)[0];
+                popup_89780ffc323a6e178300723aed3379f3.setContent(html_1e5eee2dd445038583a594aaba1fb630);
+            
+        
+
+        marker_df9c64443e376abdc8d590a2f330b57e.bindPopup(popup_89780ffc323a6e178300723aed3379f3)
+        ;
+
+        
+    
+    
+            var marker_9be94c119e643449f6e5b6f9decce03b = L.marker(
+                [-37.834671965373985, 145.02263508424622],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_39a0d30f6be64b9de6f4d2c4558730e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b2e450b8cc4d44c36f2659921b842f4 = $(`<div id="html_0b2e450b8cc4d44c36f2659921b842f4" style="width: 100.0%; height: 100.0%;">Train Station: Heyington Railway Station (Toorak) (Stop ID: 19909)</div>`)[0];
+                popup_39a0d30f6be64b9de6f4d2c4558730e2.setContent(html_0b2e450b8cc4d44c36f2659921b842f4);
+            
+        
+
+        marker_9be94c119e643449f6e5b6f9decce03b.bindPopup(popup_39a0d30f6be64b9de6f4d2c4558730e2)
+        ;
+
+        
+    
+    
+            var marker_c8c675870f3bad7de3ad86d6a347db63 = L.marker(
+                [-37.839929048366116, 145.03355208421473],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_c18133808977909df56e5ea29a25ea55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51b6b6ac18530a055b78e95869484532 = $(`<div id="html_51b6b6ac18530a055b78e95869484532" style="width: 100.0%; height: 100.0%;">Train Station: Kooyong Railway Station (Kooyong) (Stop ID: 19910)</div>`)[0];
+                popup_c18133808977909df56e5ea29a25ea55.setContent(html_51b6b6ac18530a055b78e95869484532);
+            
+        
+
+        marker_c8c675870f3bad7de3ad86d6a347db63.bindPopup(popup_c18133808977909df56e5ea29a25ea55)
+        ;
+
+        
+    
+    
+            var marker_d23f7a1feead66acd32eee5a967cfa0b = L.marker(
+                [-37.84936599739654, 145.04173415478712],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_94389407c9aab5075ecaf4edc9da6fe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_072c6d70db4a9d87d2ef4819ddf480a9 = $(`<div id="html_072c6d70db4a9d87d2ef4819ddf480a9" style="width: 100.0%; height: 100.0%;">Train Station: Tooronga Railway Station (Malvern) (Stop ID: 19911)</div>`)[0];
+                popup_94389407c9aab5075ecaf4edc9da6fe0.setContent(html_072c6d70db4a9d87d2ef4819ddf480a9);
+            
+        
+
+        marker_d23f7a1feead66acd32eee5a967cfa0b.bindPopup(popup_94389407c9aab5075ecaf4edc9da6fe0)
+        ;
+
+        
+    
+    
+            var marker_3790290924e037e3b292178e4118441a = L.marker(
+                [-37.85327901773509, 145.05165504987352],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b6a56f6f1b3018b13cca87cb61a4bba7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2f49d6ccd32c7b0c634a9b1d8f3c88b = $(`<div id="html_c2f49d6ccd32c7b0c634a9b1d8f3c88b" style="width: 100.0%; height: 100.0%;">Train Station: Gardiner Railway Station (Glen Iris) (Stop ID: 19912)</div>`)[0];
+                popup_b6a56f6f1b3018b13cca87cb61a4bba7.setContent(html_c2f49d6ccd32c7b0c634a9b1d8f3c88b);
+            
+        
+
+        marker_3790290924e037e3b292178e4118441a.bindPopup(popup_b6a56f6f1b3018b13cca87cb61a4bba7)
+        ;
+
+        
+    
+    
+            var marker_f47344ab4a93ec54540fdfb7cfcadf44 = L.marker(
+                [-37.94950899259216, 145.1534518921023],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_704e8754ade47fa6816d390555e8f1dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80522580da0d887bc849864914273b6e = $(`<div id="html_80522580da0d887bc849864914273b6e" style="width: 100.0%; height: 100.0%;">Train Station: Springvale Railway Station (Springvale) (Stop ID: 19913)</div>`)[0];
+                popup_704e8754ade47fa6816d390555e8f1dc.setContent(html_80522580da0d887bc849864914273b6e);
+            
+        
+
+        marker_f47344ab4a93ec54540fdfb7cfcadf44.bindPopup(popup_704e8754ade47fa6816d390555e8f1dc)
+        ;
+
+        
+    
+    
+            var marker_48ced07f7c99044582258023565fa83d = L.marker(
+                [-37.938491011333234, 145.13883302874603],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_4cf048931e419246983ce195d50a7fce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4258764d8147c6c8ed580fac01fd2170 = $(`<div id="html_4258764d8147c6c8ed580fac01fd2170" style="width: 100.0%; height: 100.0%;">Train Station: Westall Railway Station (Clayton South) (Stop ID: 19914)</div>`)[0];
+                popup_4cf048931e419246983ce195d50a7fce.setContent(html_4258764d8147c6c8ed580fac01fd2170);
+            
+        
+
+        marker_48ced07f7c99044582258023565fa83d.bindPopup(popup_4cf048931e419246983ce195d50a7fce)
+        ;
+
+        
+    
+    
+            var marker_1d80313616c7123a2a488be2fd1ad513 = L.marker(
+                [-37.92468303486988, 145.12053387025009],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5583f330cd88174004c61048ce1e5778 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_904e5995b66d41c6f152b28bd4b7f78f = $(`<div id="html_904e5995b66d41c6f152b28bd4b7f78f" style="width: 100.0%; height: 100.0%;">Train Station: Clayton Railway Station (Clayton) (Stop ID: 19915)</div>`)[0];
+                popup_5583f330cd88174004c61048ce1e5778.setContent(html_904e5995b66d41c6f152b28bd4b7f78f);
+            
+        
+
+        marker_1d80313616c7123a2a488be2fd1ad513.bindPopup(popup_5583f330cd88174004c61048ce1e5778)
+        ;
+
+        
+    
+    
+            var marker_446b203dcf7969912a68176c35b7252f = L.marker(
+                [-37.911016990825836, 145.10236393324308],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_30a0ffc6ada3b46b4e81d45ae2007b64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c462733e89626d84e95e46d60cc3d72e = $(`<div id="html_c462733e89626d84e95e46d60cc3d72e" style="width: 100.0%; height: 100.0%;">Train Station: Huntingdale Railway Station (Oakleigh) (Stop ID: 19916)</div>`)[0];
+                popup_30a0ffc6ada3b46b4e81d45ae2007b64.setContent(html_c462733e89626d84e95e46d60cc3d72e);
+            
+        
+
+        marker_446b203dcf7969912a68176c35b7252f.bindPopup(popup_30a0ffc6ada3b46b4e81d45ae2007b64)
+        ;
+
+        
+    
+    
+            var marker_977e13a5df9996ea52b64e92e5c2a852 = L.marker(
+                [-37.90037196749365, 145.0883080921356],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_55807c1c8037ad607e716b5ea644d33d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e2211c03ba9cc1e4dbb793afe08892a = $(`<div id="html_5e2211c03ba9cc1e4dbb793afe08892a" style="width: 100.0%; height: 100.0%;">Train Station: Oakleigh Railway Station (Oakleigh) (Stop ID: 19917)</div>`)[0];
+                popup_55807c1c8037ad607e716b5ea644d33d.setContent(html_5e2211c03ba9cc1e4dbb793afe08892a);
+            
+        
+
+        marker_977e13a5df9996ea52b64e92e5c2a852.bindPopup(popup_55807c1c8037ad607e716b5ea644d33d)
+        ;
+
+        
+    
+    
+            var marker_2faa825bf1b5de7b97af6afe014302aa = L.marker(
+                [-37.89488097733909, 145.07763518406495],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_852aa234af7bd276e31134207b35323f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66aed1771f53e4d23c15a245577af01e = $(`<div id="html_66aed1771f53e4d23c15a245577af01e" style="width: 100.0%; height: 100.0%;">Train Station: Hughesdale Railway Station (Hughesdale) (Stop ID: 19918)</div>`)[0];
+                popup_852aa234af7bd276e31134207b35323f.setContent(html_66aed1771f53e4d23c15a245577af01e);
+            
+        
+
+        marker_2faa825bf1b5de7b97af6afe014302aa.bindPopup(popup_852aa234af7bd276e31134207b35323f)
+        ;
+
+        
+    
+    
+            var marker_08101b0eb4907b4e678581a303aee384 = L.marker(
+                [-37.89019800833117, 145.0673751866043],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_72986f3f014a5a8d20b4010c595d1e4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306f55120403efc1f762d31e9d950e7d = $(`<div id="html_306f55120403efc1f762d31e9d950e7d" style="width: 100.0%; height: 100.0%;">Train Station: Murrumbeena Railway Station (Murrumbeena) (Stop ID: 19919)</div>`)[0];
+                popup_72986f3f014a5a8d20b4010c595d1e4b.setContent(html_306f55120403efc1f762d31e9d950e7d);
+            
+        
+
+        marker_08101b0eb4907b4e678581a303aee384.bindPopup(popup_72986f3f014a5a8d20b4010c595d1e4b)
+        ;
+
+        
+    
+    
+            var marker_bcc24e624cc767ec2e85f02e776fea54 = L.marker(
+                [-37.886240976370786, 145.05857497723898],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_897cbb00e63a2d2625748ff5dfb75b86 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccde28471a9f8c160295d5325bde56fc = $(`<div id="html_ccde28471a9f8c160295d5325bde56fc" style="width: 100.0%; height: 100.0%;">Train Station: Carnegie Railway Station (Carnegie) (Stop ID: 19920)</div>`)[0];
+                popup_897cbb00e63a2d2625748ff5dfb75b86.setContent(html_ccde28471a9f8c160295d5325bde56fc);
+            
+        
+
+        marker_bcc24e624cc767ec2e85f02e776fea54.bindPopup(popup_897cbb00e63a2d2625748ff5dfb75b86)
+        ;
+
+        
+    
+    
+            var marker_eba22bea07a9ae85c335f06715c16c82 = L.marker(
+                [-37.89937800378759, 144.66111806209827],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_2d792c0aa54f972f50a390be9e125678 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef79c5801815fd614a8172a8737199ff = $(`<div id="html_ef79c5801815fd614a8172a8737199ff" style="width: 100.0%; height: 100.0%;">Train Station: Werribee Railway Station (Werribee) (Stop ID: 19921)</div>`)[0];
+                popup_2d792c0aa54f972f50a390be9e125678.setContent(html_ef79c5801815fd614a8172a8737199ff);
+            
+        
+
+        marker_eba22bea07a9ae85c335f06715c16c82.bindPopup(popup_2d792c0aa54f972f50a390be9e125678)
+        ;
+
+        
+    
+    
+            var marker_8a7f241a8cefe4c8c4e7f834156b4478 = L.marker(
+                [-37.88327601324334, 144.7009549451706],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_a33a2662a1c4458310679029a0ccf124 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d0f832e3877f6b8f7153f1062dadefe = $(`<div id="html_0d0f832e3877f6b8f7153f1062dadefe" style="width: 100.0%; height: 100.0%;">Train Station: Hoppers Crossing Railway Station (Hoppers Crossing) (Stop ID: 19922)</div>`)[0];
+                popup_a33a2662a1c4458310679029a0ccf124.setContent(html_0d0f832e3877f6b8f7153f1062dadefe);
+            
+        
+
+        marker_8a7f241a8cefe4c8c4e7f834156b4478.bindPopup(popup_a33a2662a1c4458310679029a0ccf124)
+        ;
+
+        
+    
+    
+            var marker_0a1f6ccb368c6a5c77b275f46e20c54c = L.marker(
+                [-37.863693995393945, 144.77261691069953],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f0506fbeb2e0a8a12c3cfd3cd5b083e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9307444812be79097fa52b524200a01f = $(`<div id="html_9307444812be79097fa52b524200a01f" style="width: 100.0%; height: 100.0%;">Train Station: Laverton Railway Station (Laverton) (Stop ID: 19923)</div>`)[0];
+                popup_f0506fbeb2e0a8a12c3cfd3cd5b083e7.setContent(html_9307444812be79097fa52b524200a01f);
+            
+        
+
+        marker_0a1f6ccb368c6a5c77b275f46e20c54c.bindPopup(popup_f0506fbeb2e0a8a12c3cfd3cd5b083e7)
+        ;
+
+        
+    
+    
+            var marker_074491b29b7b24f9175c20f89c6e44a5 = L.marker(
+                [-37.866606032750546, 144.7608088985207],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5cfb073d6b0265f42d9769e658be1e29 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f90d619ad16fd9abe967eb16660163c2 = $(`<div id="html_f90d619ad16fd9abe967eb16660163c2" style="width: 100.0%; height: 100.0%;">Train Station: Aircraft Railway Station (Laverton) (Stop ID: 19924)</div>`)[0];
+                popup_5cfb073d6b0265f42d9769e658be1e29.setContent(html_f90d619ad16fd9abe967eb16660163c2);
+            
+        
+
+        marker_074491b29b7b24f9175c20f89c6e44a5.bindPopup(popup_5cfb073d6b0265f42d9769e658be1e29)
+        ;
+
+        
+    
+    
+            var marker_d63ca5304418fbe1881dcb0704711bf3 = L.marker(
+                [-37.8651629765648, 144.81349417315855],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8f9e4bf011820f3cf6dd8c5eac06cde4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d2edc341914640bae22b69db98f8ef7 = $(`<div id="html_9d2edc341914640bae22b69db98f8ef7" style="width: 100.0%; height: 100.0%;">Train Station: Westona Railway Station (Altona) (Stop ID: 19925)</div>`)[0];
+                popup_8f9e4bf011820f3cf6dd8c5eac06cde4.setContent(html_9d2edc341914640bae22b69db98f8ef7);
+            
+        
+
+        marker_d63ca5304418fbe1881dcb0704711bf3.bindPopup(popup_8f9e4bf011820f3cf6dd8c5eac06cde4)
+        ;
+
+        
+    
+    
+            var marker_20e553bb93fbc5a214f90f90892ba672 = L.marker(
+                [-37.86714801409339, 144.82964484849458],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_0ef65eef2fb985f46ee402d5fdec169f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_095a71eadcf2a8943f025e567337caaa = $(`<div id="html_095a71eadcf2a8943f025e567337caaa" style="width: 100.0%; height: 100.0%;">Train Station: Altona Railway Station (Altona) (Stop ID: 19926)</div>`)[0];
+                popup_0ef65eef2fb985f46ee402d5fdec169f.setContent(html_095a71eadcf2a8943f025e567337caaa);
+            
+        
+
+        marker_20e553bb93fbc5a214f90f90892ba672.bindPopup(popup_0ef65eef2fb985f46ee402d5fdec169f)
+        ;
+
+        
+    
+    
+            var marker_f31589c91f0a190db6a1315c3e354a74 = L.marker(
+                [-37.86784200270676, 144.84095784803088],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_c4e01ea463b88caa3228f319a5ecd797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae5b022b922453288c3ab87e2470e175 = $(`<div id="html_ae5b022b922453288c3ab87e2470e175" style="width: 100.0%; height: 100.0%;">Train Station: Seaholme Railway Station (Seaholme) (Stop ID: 19927)</div>`)[0];
+                popup_c4e01ea463b88caa3228f319a5ecd797.setContent(html_ae5b022b922453288c3ab87e2470e175);
+            
+        
+
+        marker_f31589c91f0a190db6a1315c3e354a74.bindPopup(popup_c4e01ea463b88caa3228f319a5ecd797)
+        ;
+
+        
+    
+    
+            var marker_2cc56dacbbd4c4377ff353978b3aa63e = L.marker(
+                [-37.780621021498604, 144.9992329526931],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8496443f39d07251885209e62f70d94a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd29c8030a1e95a06465bcad7478841 = $(`<div id="html_bdd29c8030a1e95a06465bcad7478841" style="width: 100.0%; height: 100.0%;">Train Station: Westgarth Railway Station (Northcote) (Stop ID: 19928)</div>`)[0];
+                popup_8496443f39d07251885209e62f70d94a.setContent(html_bdd29c8030a1e95a06465bcad7478841);
+            
+        
+
+        marker_2cc56dacbbd4c4377ff353978b3aa63e.bindPopup(popup_8496443f39d07251885209e62f70d94a)
+        ;
+
+        
+    
+    
+            var marker_926f7f2654dc98b518dcccbf3abf5500 = L.marker(
+                [-37.779186960703825, 145.00824193502052],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_6f960d652628f5419c01fec379836818 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a0ad80a31e3093098b1b477f808ef8d = $(`<div id="html_3a0ad80a31e3093098b1b477f808ef8d" style="width: 100.0%; height: 100.0%;">Train Station: Dennis Railway Station (Northcote) (Stop ID: 19929)</div>`)[0];
+                popup_6f960d652628f5419c01fec379836818.setContent(html_3a0ad80a31e3093098b1b477f808ef8d);
+            
+        
+
+        marker_926f7f2654dc98b518dcccbf3abf5500.bindPopup(popup_6f960d652628f5419c01fec379836818)
+        ;
+
+        
+    
+    
+            var marker_383747cbd8bdb71b4b62da3147a65197 = L.marker(
+                [-37.77917103027729, 145.01690497413267],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_0c24d15c8e69d728861e28033ba215b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a6f0bfee41aa62c4c081ccdbfce7f074 = $(`<div id="html_a6f0bfee41aa62c4c081ccdbfce7f074" style="width: 100.0%; height: 100.0%;">Train Station: Fairfield Railway Station (Fairfield) (Stop ID: 19930)</div>`)[0];
+                popup_0c24d15c8e69d728861e28033ba215b6.setContent(html_a6f0bfee41aa62c4c081ccdbfce7f074);
+            
+        
+
+        marker_383747cbd8bdb71b4b62da3147a65197.bindPopup(popup_0c24d15c8e69d728861e28033ba215b6)
+        ;
+
+        
+    
+    
+            var marker_7c35f4da4ea73e0377c1e7bfc8ff4f2a = L.marker(
+                [-37.778393970184325, 145.0312549420362],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5fbc7a2c3cbe7d5e0ddf3696d0f0329d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_069182f49438e1a8f4c4b6799cd1e6bd = $(`<div id="html_069182f49438e1a8f4c4b6799cd1e6bd" style="width: 100.0%; height: 100.0%;">Train Station: Alphington Railway Station (Alphington) (Stop ID: 19931)</div>`)[0];
+                popup_5fbc7a2c3cbe7d5e0ddf3696d0f0329d.setContent(html_069182f49438e1a8f4c4b6799cd1e6bd);
+            
+        
+
+        marker_7c35f4da4ea73e0377c1e7bfc8ff4f2a.bindPopup(popup_5fbc7a2c3cbe7d5e0ddf3696d0f0329d)
+        ;
+
+        
+    
+    
+            var marker_5695b68dbe66d857f47091cbf8b2f875 = L.marker(
+                [-37.774962990239736, 145.0384761897359],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_53fdd11e8d5d5d32e587d62ec158cd58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e60486f90a6bf2bf19b589aea64f7fd6 = $(`<div id="html_e60486f90a6bf2bf19b589aea64f7fd6" style="width: 100.0%; height: 100.0%;">Train Station: Darebin Railway Station (Ivanhoe) (Stop ID: 19932)</div>`)[0];
+                popup_53fdd11e8d5d5d32e587d62ec158cd58.setContent(html_e60486f90a6bf2bf19b589aea64f7fd6);
+            
+        
+
+        marker_5695b68dbe66d857f47091cbf8b2f875.bindPopup(popup_53fdd11e8d5d5d32e587d62ec158cd58)
+        ;
+
+        
+    
+    
+            var marker_b3ffe70cec6789b36d07a8e5fda922b2 = L.marker(
+                [-37.76889698950453, 145.0454249007254],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_3e54243ff7cbf7f0d27b72290100b726 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dcf470a4a060513edff2f2e645f5294 = $(`<div id="html_2dcf470a4a060513edff2f2e645f5294" style="width: 100.0%; height: 100.0%;">Train Station: Ivanhoe Railway Station (Ivanhoe) (Stop ID: 19933)</div>`)[0];
+                popup_3e54243ff7cbf7f0d27b72290100b726.setContent(html_2dcf470a4a060513edff2f2e645f5294);
+            
+        
+
+        marker_b3ffe70cec6789b36d07a8e5fda922b2.bindPopup(popup_3e54243ff7cbf7f0d27b72290100b726)
+        ;
+
+        
+    
+    
+            var marker_6a33929a3701f87bba2ee528318ed54c = L.marker(
+                [-37.76358600115558, 145.0539428530202],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8135963397242aa0be65ac6f3d127779 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf05f46edeca676ca2dade10caa544ae = $(`<div id="html_cf05f46edeca676ca2dade10caa544ae" style="width: 100.0%; height: 100.0%;">Train Station: Eaglemont Railway Station (Eaglemont) (Stop ID: 19934)</div>`)[0];
+                popup_8135963397242aa0be65ac6f3d127779.setContent(html_cf05f46edeca676ca2dade10caa544ae);
+            
+        
+
+        marker_6a33929a3701f87bba2ee528318ed54c.bindPopup(popup_8135963397242aa0be65ac6f3d127779)
+        ;
+
+        
+    
+    
+            var marker_7ab268f7af45a0abafaca1e7f18b968a = L.marker(
+                [-37.75707297186314, 145.06068602994233],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_98da83935385d04cb6cfc6074e59d0b9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_213c76efe49ae7c5ccec3258f7f156dc = $(`<div id="html_213c76efe49ae7c5ccec3258f7f156dc" style="width: 100.0%; height: 100.0%;">Train Station: Heidelberg Railway Station (Heidelberg) (Stop ID: 19935)</div>`)[0];
+                popup_98da83935385d04cb6cfc6074e59d0b9.setContent(html_213c76efe49ae7c5ccec3258f7f156dc);
+            
+        
+
+        marker_7ab268f7af45a0abafaca1e7f18b968a.bindPopup(popup_98da83935385d04cb6cfc6074e59d0b9)
+        ;
+
+        
+    
+    
+            var marker_18f8f952d7f66050153cbe05aa51b0bc = L.marker(
+                [-37.74287898170107, 145.06614004306664],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ad753941bd14a691e0fc69c9f18f0b85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2593faa30c49a894ccb15d9d7aa213b = $(`<div id="html_e2593faa30c49a894ccb15d9d7aa213b" style="width: 100.0%; height: 100.0%;">Train Station: Rosanna Railway Station (Rosanna) (Stop ID: 19936)</div>`)[0];
+                popup_ad753941bd14a691e0fc69c9f18f0b85.setContent(html_e2593faa30c49a894ccb15d9d7aa213b);
+            
+        
+
+        marker_18f8f952d7f66050153cbe05aa51b0bc.bindPopup(popup_ad753941bd14a691e0fc69c9f18f0b85)
+        ;
+
+        
+    
+    
+            var marker_6a976b60b2b207f5819c14473111c4b7 = L.marker(
+                [-37.934352997334734, 145.0367381151247],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_db18a1acafa9640560087f66760aa8c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b365b6537ba3072e1258d44d6bb899a = $(`<div id="html_1b365b6537ba3072e1258d44d6bb899a" style="width: 100.0%; height: 100.0%;">Train Station: Moorabbin Railway Station (Moorabbin) (Stop ID: 19937)</div>`)[0];
+                popup_db18a1acafa9640560087f66760aa8c1.setContent(html_1b365b6537ba3072e1258d44d6bb899a);
+            
+        
+
+        marker_6a976b60b2b207f5819c14473111c4b7.bindPopup(popup_db18a1acafa9640560087f66760aa8c1)
+        ;
+
+        
+    
+    
+            var marker_fe730ee5eaf20e468ea3f6eeac0f671f = L.marker(
+                [-37.9251489679829, 145.03547018698544],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_32aba15d58dcb4105ebda1ec7fed34fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2a499747d00da8d313715ec651f63c9 = $(`<div id="html_a2a499747d00da8d313715ec651f63c9" style="width: 100.0%; height: 100.0%;">Train Station: Patterson Railway Station (Bentleigh) (Stop ID: 19938)</div>`)[0];
+                popup_32aba15d58dcb4105ebda1ec7fed34fd.setContent(html_a2a499747d00da8d313715ec651f63c9);
+            
+        
+
+        marker_fe730ee5eaf20e468ea3f6eeac0f671f.bindPopup(popup_32aba15d58dcb4105ebda1ec7fed34fd)
+        ;
+
+        
+    
+    
+            var marker_cdcb4629249b8717f6d41580904f7160 = L.marker(
+                [-37.917424987593655, 145.0369951450514],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_41a39e036111191a68dc9fd409689289 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d4d10b3e10ad26972f47c6a129fed71 = $(`<div id="html_5d4d10b3e10ad26972f47c6a129fed71" style="width: 100.0%; height: 100.0%;">Train Station: Bentleigh Railway Station (Bentleigh) (Stop ID: 19939)</div>`)[0];
+                popup_41a39e036111191a68dc9fd409689289.setContent(html_5d4d10b3e10ad26972f47c6a129fed71);
+            
+        
+
+        marker_cdcb4629249b8717f6d41580904f7160.bindPopup(popup_41a39e036111191a68dc9fd409689289)
+        ;
+
+        
+    
+    
+            var marker_226a6101fc5f649760cc339bd01ea869 = L.marker(
+                [-37.9103090471004, 145.03829905678242],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5df19118e15fdd63785bf16b2e9ef22f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52eac8f647f8bac9e88bae9105586d4e = $(`<div id="html_52eac8f647f8bac9e88bae9105586d4e" style="width: 100.0%; height: 100.0%;">Train Station: McKinnon Railway Station (Mckinnon) (Stop ID: 19940)</div>`)[0];
+                popup_5df19118e15fdd63785bf16b2e9ef22f.setContent(html_52eac8f647f8bac9e88bae9105586d4e);
+            
+        
+
+        marker_226a6101fc5f649760cc339bd01ea869.bindPopup(popup_5df19118e15fdd63785bf16b2e9ef22f)
+        ;
+
+        
+    
+    
+            var marker_1ac4a622a96e8504babc029997d62cbe = L.marker(
+                [-37.903212006932286, 145.0396130453646],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b1675c8ce5ccaff45b303e891ad375ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98c125e5cf81920018e5820e1f3036cc = $(`<div id="html_98c125e5cf81920018e5820e1f3036cc" style="width: 100.0%; height: 100.0%;">Train Station: Ormond Railway Station (Ormond) (Stop ID: 19941)</div>`)[0];
+                popup_b1675c8ce5ccaff45b303e891ad375ad.setContent(html_98c125e5cf81920018e5820e1f3036cc);
+            
+        
+
+        marker_1ac4a622a96e8504babc029997d62cbe.bindPopup(popup_b1675c8ce5ccaff45b303e891ad375ad)
+        ;
+
+        
+    
+    
+            var marker_7bb0f0c0e6adeaacc0850382ceb19dd4 = L.marker(
+                [-37.889719026839934, 145.04222302981012],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_77d270d8114db3c21dbb11ea4cd0c362 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_293b8a0751d2406543482b83aec369de = $(`<div id="html_293b8a0751d2406543482b83aec369de" style="width: 100.0%; height: 100.0%;">Train Station: Glenhuntly Railway Station (Glen Huntly) (Stop ID: 19942)</div>`)[0];
+                popup_77d270d8114db3c21dbb11ea4cd0c362.setContent(html_293b8a0751d2406543482b83aec369de);
+            
+        
+
+        marker_7bb0f0c0e6adeaacc0850382ceb19dd4.bindPopup(popup_77d270d8114db3c21dbb11ea4cd0c362)
+        ;
+
+        
+    
+    
+            var marker_70e261dc49cbab5a236630bfcb8f3b09 = L.marker(
+                [-37.87745904950535, 145.04252511062438],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8513163d91694a2646c47c1641f9fd6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85f4795ab303c0554b6e66500cf55785 = $(`<div id="html_85f4795ab303c0554b6e66500cf55785" style="width: 100.0%; height: 100.0%;">Train Station: Caulfield Railway Station (Caulfield East) (Stop ID: 19943)</div>`)[0];
+                popup_8513163d91694a2646c47c1641f9fd6f.setContent(html_85f4795ab303c0554b6e66500cf55785);
+            
+        
+
+        marker_70e261dc49cbab5a236630bfcb8f3b09.bindPopup(popup_8513163d91694a2646c47c1641f9fd6f)
+        ;
+
+        
+    
+    
+            var marker_a2913f40e48d865f5a0402ec5499dc75 = L.marker(
+                [-37.86625296743994, 145.02929401539313],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_6c3f47390d4f3455cb847d5b422e62ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f69d0888a48f2855267fdd23217a9771 = $(`<div id="html_f69d0888a48f2855267fdd23217a9771" style="width: 100.0%; height: 100.0%;">Train Station: Malvern Railway Station (Malvern) (Stop ID: 19944)</div>`)[0];
+                popup_6c3f47390d4f3455cb847d5b422e62ea.setContent(html_f69d0888a48f2855267fdd23217a9771);
+            
+        
+
+        marker_a2913f40e48d865f5a0402ec5499dc75.bindPopup(popup_6c3f47390d4f3455cb847d5b422e62ea)
+        ;
+
+        
+    
+    
+            var marker_33956e63c5c5f99f89bc2ed14153e7c3 = L.marker(
+                [-37.85645196640077, 145.0193259624038],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_72685467e6a83e902bc6aa0e11536be2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e1f52f83989e6c5278c436f839bf2f3 = $(`<div id="html_8e1f52f83989e6c5278c436f839bf2f3" style="width: 100.0%; height: 100.0%;">Train Station: Armadale Railway Station (Armadale) (Stop ID: 19945)</div>`)[0];
+                popup_72685467e6a83e902bc6aa0e11536be2.setContent(html_8e1f52f83989e6c5278c436f839bf2f3);
+            
+        
+
+        marker_33956e63c5c5f99f89bc2ed14153e7c3.bindPopup(popup_72685467e6a83e902bc6aa0e11536be2)
+        ;
+
+        
+    
+    
+            var marker_39febba7b20e53aff3fe9168046eb619 = L.marker(
+                [-37.85077404613171, 145.01390904858653],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_57dc564c43d69de014429d273d8465d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c1bf9bd1afa59ef5a138e6638a96780 = $(`<div id="html_9c1bf9bd1afa59ef5a138e6638a96780" style="width: 100.0%; height: 100.0%;">Train Station: Toorak Railway Station (Armadale) (Stop ID: 19946)</div>`)[0];
+                popup_57dc564c43d69de014429d273d8465d3.setContent(html_9c1bf9bd1afa59ef5a138e6638a96780);
+            
+        
+
+        marker_39febba7b20e53aff3fe9168046eb619.bindPopup(popup_57dc564c43d69de014429d273d8465d3)
+        ;
+
+        
+    
+    
+            var marker_84931174f1c444d2fc628e4857a0f152 = L.marker(
+                [-37.84459104465304, 145.00214211386543],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_2411e69e1ae8530c351d1c2962b60109 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc5d879421be3fd4732fcd64fbd071d4 = $(`<div id="html_fc5d879421be3fd4732fcd64fbd071d4" style="width: 100.0%; height: 100.0%;">Train Station: Hawksburn Railway Station (South Yarra) (Stop ID: 19947)</div>`)[0];
+                popup_2411e69e1ae8530c351d1c2962b60109.setContent(html_fc5d879421be3fd4732fcd64fbd071d4);
+            
+        
+
+        marker_84931174f1c444d2fc628e4857a0f152.bindPopup(popup_2411e69e1ae8530c351d1c2962b60109)
+        ;
+
+        
+    
+    
+            var marker_c2587306a3ccc87c36bcdc8cc25acbec = L.marker(
+                [-37.95032997678135, 145.00456092996131],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_19178b1d6f51a9bc13f4956fe66cad65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18f731cdc4ad3e58b69cf091e054ebb6 = $(`<div id="html_18f731cdc4ad3e58b69cf091e054ebb6" style="width: 100.0%; height: 100.0%;">Train Station: Sandringham Railway Station (Sandringham) (Stop ID: 19948)</div>`)[0];
+                popup_19178b1d6f51a9bc13f4956fe66cad65.setContent(html_18f731cdc4ad3e58b69cf091e054ebb6);
+            
+        
+
+        marker_c2587306a3ccc87c36bcdc8cc25acbec.bindPopup(popup_19178b1d6f51a9bc13f4956fe66cad65)
+        ;
+
+        
+    
+    
+            var marker_c35e4a26e7ced51a825c969348e33d8f = L.marker(
+                [-37.93797702778554, 145.0014710475163],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_dce6e42d7851100d53eb83907dbc3820 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e371b9f2c1793eb4f26415067090fa86 = $(`<div id="html_e371b9f2c1793eb4f26415067090fa86" style="width: 100.0%; height: 100.0%;">Train Station: Hampton Railway Station (Hampton) (Stop ID: 19949)</div>`)[0];
+                popup_dce6e42d7851100d53eb83907dbc3820.setContent(html_e371b9f2c1793eb4f26415067090fa86);
+            
+        
+
+        marker_c35e4a26e7ced51a825c969348e33d8f.bindPopup(popup_dce6e42d7851100d53eb83907dbc3820)
+        ;
+
+        
+    
+    
+            var marker_644cd2f2b68209b49e1c994da6121849 = L.marker(
+                [-37.92648402636408, 144.98915400748288],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_07ff0f2f868d4fba0633c16e7c0bfd20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_59fd1be0d3dd924b0653af02e0d8fc79 = $(`<div id="html_59fd1be0d3dd924b0653af02e0d8fc79" style="width: 100.0%; height: 100.0%;">Train Station: Brighton Beach Railway Station (Brighton) (Stop ID: 19950)</div>`)[0];
+                popup_07ff0f2f868d4fba0633c16e7c0bfd20.setContent(html_59fd1be0d3dd924b0653af02e0d8fc79);
+            
+        
+
+        marker_644cd2f2b68209b49e1c994da6121849.bindPopup(popup_07ff0f2f868d4fba0633c16e7c0bfd20)
+        ;
+
+        
+    
+    
+            var marker_37a695bc8918c62f31aabbd03511f8d4 = L.marker(
+                [-37.91513403726259, 144.99629892106807],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_71aeff9912d8591742ba66d4ebba335a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_916abd72fb85261676f6d4739c92beb3 = $(`<div id="html_916abd72fb85261676f6d4739c92beb3" style="width: 100.0%; height: 100.0%;">Train Station: Middle Brighton Railway Station (Brighton) (Stop ID: 19951)</div>`)[0];
+                popup_71aeff9912d8591742ba66d4ebba335a.setContent(html_916abd72fb85261676f6d4739c92beb3);
+            
+        
+
+        marker_37a695bc8918c62f31aabbd03511f8d4.bindPopup(popup_71aeff9912d8591742ba66d4ebba335a)
+        ;
+
+        
+    
+    
+            var marker_8425549bcfebb5886395b32e32d21563 = L.marker(
+                [-37.904886999374064, 145.00260504023572],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8a6ea3e6938a8800ae4d00326bdecc56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2ca96b93195d6a263914bb793eb1e24 = $(`<div id="html_d2ca96b93195d6a263914bb793eb1e24" style="width: 100.0%; height: 100.0%;">Train Station: North Brighton Railway Station (Brighton) (Stop ID: 19952)</div>`)[0];
+                popup_8a6ea3e6938a8800ae4d00326bdecc56.setContent(html_d2ca96b93195d6a263914bb793eb1e24);
+            
+        
+
+        marker_8425549bcfebb5886395b32e32d21563.bindPopup(popup_8a6ea3e6938a8800ae4d00326bdecc56)
+        ;
+
+        
+    
+    
+            var marker_34b9c1238fbbf9d44412b11486821d29 = L.marker(
+                [-37.89669501891709, 145.0041681594568],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ed55df8ae0916363de44b05562da1f1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a20341dc8de1f38462395d593d35c963 = $(`<div id="html_a20341dc8de1f38462395d593d35c963" style="width: 100.0%; height: 100.0%;">Train Station: Gardenvale Railway Station (Brighton) (Stop ID: 19953)</div>`)[0];
+                popup_ed55df8ae0916363de44b05562da1f1a.setContent(html_a20341dc8de1f38462395d593d35c963);
+            
+        
+
+        marker_34b9c1238fbbf9d44412b11486821d29.bindPopup(popup_ed55df8ae0916363de44b05562da1f1a)
+        ;
+
+        
+    
+    
+            var marker_e211fc06251ca09273ff4aacb6b9686a = L.marker(
+                [-37.88475300849933, 145.00089792626244],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f9596e8bde06c0a3ce7bd49900d1f62c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c92ca4d3173018ba7b65355b158b7ee = $(`<div id="html_1c92ca4d3173018ba7b65355b158b7ee" style="width: 100.0%; height: 100.0%;">Train Station: Elsternwick Railway Station (Elsternwick) (Stop ID: 19954)</div>`)[0];
+                popup_f9596e8bde06c0a3ce7bd49900d1f62c.setContent(html_1c92ca4d3173018ba7b65355b158b7ee);
+            
+        
+
+        marker_e211fc06251ca09273ff4aacb6b9686a.bindPopup(popup_f9596e8bde06c0a3ce7bd49900d1f62c)
+        ;
+
+        
+    
+    
+            var marker_8cdd62de84c042b20f12d1f43ce412ee = L.marker(
+                [-37.875906008374365, 144.99523695425376],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_e947cec21344ce52453b516f87b38fe7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6afeec54c0b3e1fb7828e9eba07077fe = $(`<div id="html_6afeec54c0b3e1fb7828e9eba07077fe" style="width: 100.0%; height: 100.0%;">Train Station: Ripponlea Railway Station (Ripponlea) (Stop ID: 19955)</div>`)[0];
+                popup_e947cec21344ce52453b516f87b38fe7.setContent(html_6afeec54c0b3e1fb7828e9eba07077fe);
+            
+        
+
+        marker_8cdd62de84c042b20f12d1f43ce412ee.bindPopup(popup_e947cec21344ce52453b516f87b38fe7)
+        ;
+
+        
+    
+    
+            var marker_dbb71473c0bb9789eed91f8fbbc4e722 = L.marker(
+                [-37.869488016261954, 144.99351218235657],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b30f3c6fcdc081f4e32f12801bbaf652 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_962da30a26a9e4e418bb2cb1450e26f1 = $(`<div id="html_962da30a26a9e4e418bb2cb1450e26f1" style="width: 100.0%; height: 100.0%;">Train Station: Balaclava Railway Station (Balaclava) (Stop ID: 19956)</div>`)[0];
+                popup_b30f3c6fcdc081f4e32f12801bbaf652.setContent(html_962da30a26a9e4e418bb2cb1450e26f1);
+            
+        
+
+        marker_dbb71473c0bb9789eed91f8fbbc4e722.bindPopup(popup_b30f3c6fcdc081f4e32f12801bbaf652)
+        ;
+
+        
+    
+    
+            var marker_cb6d76ae6937d866a958dfba6326de62 = L.marker(
+                [-37.85605299340357, 144.99203509329004],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_5ae007111606f0efdcc5ff96e627409b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3243c7eb3bf22a417995daea3b742ffd = $(`<div id="html_3243c7eb3bf22a417995daea3b742ffd" style="width: 100.0%; height: 100.0%;">Train Station: Windsor Railway Station (Windsor) (Stop ID: 19957)</div>`)[0];
+                popup_5ae007111606f0efdcc5ff96e627409b.setContent(html_3243c7eb3bf22a417995daea3b742ffd);
+            
+        
+
+        marker_cb6d76ae6937d866a958dfba6326de62.bindPopup(popup_5ae007111606f0efdcc5ff96e627409b)
+        ;
+
+        
+    
+    
+            var marker_3c770f5023f9a8bbf1f530f062ee1742 = L.marker(
+                [-37.849518003492406, 144.98985999271946],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ccb2c491518dad1b11ac7590781f5f2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11aa83633a6cfa569ad8e3621e199be1 = $(`<div id="html_11aa83633a6cfa569ad8e3621e199be1" style="width: 100.0%; height: 100.0%;">Train Station: Prahran Railway Station (Prahran) (Stop ID: 19958)</div>`)[0];
+                popup_ccb2c491518dad1b11ac7590781f5f2d.setContent(html_11aa83633a6cfa569ad8e3621e199be1);
+            
+        
+
+        marker_3c770f5023f9a8bbf1f530f062ee1742.bindPopup(popup_ccb2c491518dad1b11ac7590781f5f2d)
+        ;
+
+        
+    
+    
+            var marker_adbe7a657b4ef59a94f1bd9f60811c0b = L.marker(
+                [-37.83844899324962, 144.99234219972408],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_f9f4dd4a59bb16a03af361bf5f1f49d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d416d23b39376d454c6628468d48458 = $(`<div id="html_6d416d23b39376d454c6628468d48458" style="width: 100.0%; height: 100.0%;">Train Station: South Yarra Railway Station (South Yarra) (Stop ID: 19959)</div>`)[0];
+                popup_f9f4dd4a59bb16a03af361bf5f1f49d0.setContent(html_6d416d23b39376d454c6628468d48458);
+            
+        
+
+        marker_adbe7a657b4ef59a94f1bd9f60811c0b.bindPopup(popup_f9f4dd4a59bb16a03af361bf5f1f49d0)
+        ;
+
+        
+    
+    
+            var marker_7eb2adfa51f53479835a93864dc68e3c = L.marker(
+                [-37.66607802131612, 144.94673986754253],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_ea58a2f498b8b195f477880e7de82823 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7e67d66dd88163c84ac08377ceede88 = $(`<div id="html_e7e67d66dd88163c84ac08377ceede88" style="width: 100.0%; height: 100.0%;">Train Station: Upfield Railway Station (Coolaroo) (Stop ID: 19960)</div>`)[0];
+                popup_ea58a2f498b8b195f477880e7de82823.setContent(html_e7e67d66dd88163c84ac08377ceede88);
+            
+        
+
+        marker_7eb2adfa51f53479835a93864dc68e3c.bindPopup(popup_ea58a2f498b8b195f477880e7de82823)
+        ;
+
+        
+    
+    
+            var marker_eacdf50c137d111efbeb302ed1fdd596 = L.marker(
+                [-37.700677977421826, 144.95887403782967],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_7559bcbbf1dd5fd728fd30603ccd5838 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3674ed59a8b273abdc3b5275a6128aae = $(`<div id="html_3674ed59a8b273abdc3b5275a6128aae" style="width: 100.0%; height: 100.0%;">Train Station: Gowrie Railway Station (Glenroy) (Stop ID: 19961)</div>`)[0];
+                popup_7559bcbbf1dd5fd728fd30603ccd5838.setContent(html_3674ed59a8b273abdc3b5275a6128aae);
+            
+        
+
+        marker_eacdf50c137d111efbeb302ed1fdd596.bindPopup(popup_7559bcbbf1dd5fd728fd30603ccd5838)
+        ;
+
+        
+    
+    
+            var marker_4177e103a73575f5e4b0af9af7c2f0a9 = L.marker(
+                [-37.71462095840933, 144.96054517607726],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_b751f347997da944b7fe9504f82175fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d2870001b9e8498ad4da90b224a7606 = $(`<div id="html_2d2870001b9e8498ad4da90b224a7606" style="width: 100.0%; height: 100.0%;">Train Station: Fawkner Railway Station (Fawkner) (Stop ID: 19962)</div>`)[0];
+                popup_b751f347997da944b7fe9504f82175fd.setContent(html_2d2870001b9e8498ad4da90b224a7606);
+            
+        
+
+        marker_4177e103a73575f5e4b0af9af7c2f0a9.bindPopup(popup_b751f347997da944b7fe9504f82175fd)
+        ;
+
+        
+    
+    
+            var marker_e113692da723e974ccff658dc5a36285 = L.marker(
+                [-37.72093400681235, 144.96131413229386],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_0f11b4f9d2e796dfe54820552df15ec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad5ca7bd5cf5a57d81bc393738d77cea = $(`<div id="html_ad5ca7bd5cf5a57d81bc393738d77cea" style="width: 100.0%; height: 100.0%;">Train Station: Merlynston Railway Station (Coburg North) (Stop ID: 19963)</div>`)[0];
+                popup_0f11b4f9d2e796dfe54820552df15ec5.setContent(html_ad5ca7bd5cf5a57d81bc393738d77cea);
+            
+        
+
+        marker_e113692da723e974ccff658dc5a36285.bindPopup(popup_0f11b4f9d2e796dfe54820552df15ec5)
+        ;
+
+        
+    
+    
+            var marker_5e42c8bc981b315b8dec05e6abcbdefe = L.marker(
+                [-37.7335230271606, 144.96284088444295],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_1280a259692a4444445346dc62e498ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d5794298fc310cbed41c87b872df370d = $(`<div id="html_d5794298fc310cbed41c87b872df370d" style="width: 100.0%; height: 100.0%;">Train Station: Batman Railway Station (Coburg North) (Stop ID: 19964)</div>`)[0];
+                popup_1280a259692a4444445346dc62e498ca.setContent(html_d5794298fc310cbed41c87b872df370d);
+            
+        
+
+        marker_5e42c8bc981b315b8dec05e6abcbdefe.bindPopup(popup_1280a259692a4444445346dc62e498ca)
+        ;
+
+        
+    
+    
+            var marker_82c3b02f3fff5decf1fe0c79300a3daf = L.marker(
+                [-37.74234500853543, 144.96333587826746],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_78e8285aa188cd392b708ea2f78592d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b13bb3e193f1c860ea4b9a0d5964f911 = $(`<div id="html_b13bb3e193f1c860ea4b9a0d5964f911" style="width: 100.0%; height: 100.0%;">Train Station: Coburg Railway Station (Coburg) (Stop ID: 19965)</div>`)[0];
+                popup_78e8285aa188cd392b708ea2f78592d9.setContent(html_b13bb3e193f1c860ea4b9a0d5964f911);
+            
+        
+
+        marker_82c3b02f3fff5decf1fe0c79300a3daf.bindPopup(popup_78e8285aa188cd392b708ea2f78592d9)
+        ;
+
+        
+    
+    
+            var marker_3e802433c4a6658bbdda4d92cb79e86a = L.marker(
+                [-37.7544850178849, 144.96182315245065],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_2460afcf81c491a3841b7761f7c2db0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3dc3f27c296e31fe8f09637f54ca036b = $(`<div id="html_3dc3f27c296e31fe8f09637f54ca036b" style="width: 100.0%; height: 100.0%;">Train Station: Moreland Railway Station (Coburg) (Stop ID: 19966)</div>`)[0];
+                popup_2460afcf81c491a3841b7761f7c2db0c.setContent(html_3dc3f27c296e31fe8f09637f54ca036b);
+            
+        
+
+        marker_3e802433c4a6658bbdda4d92cb79e86a.bindPopup(popup_2460afcf81c491a3841b7761f7c2db0c)
+        ;
+
+        
+    
+    
+            var marker_310b1a378e9349eab7f98b03750a47b6 = L.marker(
+                [-37.761242037577134, 144.96068412503988],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_8620090308e07502134857754dee509e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44f2d9df6b04a86077204d9a2eab9a30 = $(`<div id="html_44f2d9df6b04a86077204d9a2eab9a30" style="width: 100.0%; height: 100.0%;">Train Station: Anstey Railway Station (Brunswick) (Stop ID: 19967)</div>`)[0];
+                popup_8620090308e07502134857754dee509e.setContent(html_44f2d9df6b04a86077204d9a2eab9a30);
+            
+        
+
+        marker_310b1a378e9349eab7f98b03750a47b6.bindPopup(popup_8620090308e07502134857754dee509e)
+        ;
+
+        
+    
+    
+            var marker_bca1d1b1229db6a5a0a2ab01ff69bfbb = L.marker(
+                [-37.767720957795504, 144.95958686111737],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_9ba46f4b3384740e68ca6c9e51dd2f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54989d7685d0c96b5ef39608d5133ca5 = $(`<div id="html_54989d7685d0c96b5ef39608d5133ca5" style="width: 100.0%; height: 100.0%;">Train Station: Brunswick Railway Station (Brunswick) (Stop ID: 19968)</div>`)[0];
+                popup_9ba46f4b3384740e68ca6c9e51dd2f8d.setContent(html_54989d7685d0c96b5ef39608d5133ca5);
+            
+        
+
+        marker_bca1d1b1229db6a5a0a2ab01ff69bfbb.bindPopup(popup_9ba46f4b3384740e68ca6c9e51dd2f8d)
+        ;
+
+        
+    
+    
+            var marker_ae066328e58fe316890a187ed7d04b33 = L.marker(
+                [-37.7749870197818, 144.95871710696892],
+                {}
+            ).addTo(marker_cluster_316d3c380207e4a2bb46736a6fdca771);
+        
+    
+        var popup_c52fab910999c3c57ad3552097c8de5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_003c45ac436b4cf2b4f00d7f0ad5122c = $(`<div id="html_003c45ac436b4cf2b4f00d7f0ad5122c" style="width: 100.0%; height: 100.0%;">Train Station: Jewell Railway Station (Brunswick) (Stop ID: 19969)</div>`)[0];
+                popup_c52fab910999c3c57ad3552097c8de5e.setContent(html_003c45ac436b4cf2b4f00d7f0ad5122c);
+            
+        
+
+        marker_ae066328e58fe316890a187ed7d04b33.bindPopup(popup_c52fab910999c3c57ad3552097c8de5e)
+        ;
+
+        
+    
+    
+            marker_cluster_316d3c380207e4a2bb46736a6fdca771.addTo(map_bb00cfbb1909c7e98e03f1e0a5582d62);
+        
+</script>
+</html>
