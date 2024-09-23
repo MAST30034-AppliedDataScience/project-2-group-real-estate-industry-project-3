@@ -1,3 +1,20 @@
+<<<<<<< HEAD
 tqdm
 bs4
 lxml
+=======
+tqdm
+bs4
+lxml
+requests
+pyspark
+pandas
+openpyxl
+geopandas
+folium
+matplotlib
+seaborn
+pyarrow
+fastparquet
+xlrd
+>>>>>>> 6994bb9fb1db9dfcf6594d20cb9ccbc256ac74be
