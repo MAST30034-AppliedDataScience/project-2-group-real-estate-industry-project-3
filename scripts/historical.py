@@ -1,3 +1,5 @@
+# Written by Daksh Agrawal
+
 # Download excel files from the web and save them to the local directory
 import requests
 import os
@@ -19,4 +21,8 @@ def download_file(url, local_path):
 
 url = 'https://www.dffh.vic.gov.au/moving-annual-rents-suburb-march-quarter-2023-excel'
 local_path = '../data/landing/historical_data.xlsx'
+download_file(url, local_path)
+
+url = "https://data.melbourne.vic.gov.au/api/v2/catalog/datasets/development-activity-monitor/exports/csv?delimiter=%2C"
+local_path = '../data/landing/development_activity.csv'
 download_file(url, local_path)
