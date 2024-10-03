@@ -13,3 +13,4 @@ pyarrow
 fastparquet
 xlrd
 openrouteservice
+scipy
