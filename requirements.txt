@@ -15,6 +15,7 @@ xlrd
 openrouteservice
 scipy
 scikit-learn
-numpy
 beautifulsoup4~=4.12.3
 statsmodels
+pmdarima
+numpy==2.1.1
