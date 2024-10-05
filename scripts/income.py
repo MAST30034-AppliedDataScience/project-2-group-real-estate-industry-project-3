@@ -1,3 +1,5 @@
+import os
+import requests
 import pandas as pd
 
 # Downloading the dataset into a pandas DataFrame

@@ -1,9 +1,9 @@
-tqdm
-bs4
+tqdm~=4.66.5
+bs4~=0.0.2
 lxml
-requests
+requests~=2.32.3
 pyspark
-pandas
+pandas~=2.2.2
 openpyxl
 geopandas
 folium
@@ -14,3 +14,7 @@ fastparquet
 xlrd
 openrouteservice
 scipy
+scikit-learn
+numpy
+beautifulsoup4~=4.12.3
+statsmodels
