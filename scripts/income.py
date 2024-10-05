@@ -1,7 +1,6 @@
+import os
+import requests
 import pandas as pd
-
-# URL for the dataset
-url = "https://www.abs.gov.au/statistics/labour/earnings-and-working-conditions/personal-income-australia/latest-release"
 
 # Downloading the dataset into a pandas DataFrame
 # Replace 'direct_csv_link' with the actual link to the CSV file from the ABS page
@@ -11,3 +10,4 @@ personal_income_df = pd.read_csv(direct_csv_link, encoding='ISO-8859-1')
 # Saving the dataset to the specified location
 file_path = "../data/landing/Table 2 - Total income distribution by geography, 2020-21.xlsx"
 personal_income_df.to_excel(file_path, index=False)
+
