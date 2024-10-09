@@ -1,3 +1,6 @@
+## Written by Hanshi Tang
+## The script downloads the school dataset from the web and saves it to the local directory
+
 import os
 import pandas as pd
 import requests
