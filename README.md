@@ -35,6 +35,11 @@ After downloading the data, remain in the `notebooks` directory and run the note
 1. `property_lost_sa2_matching.ipynb`: This notebook finds the corresponding sa2_name for each property lost incident, and shows the top sa2 areas where property lost frequency is the top and the least. The matching dataset is stored in the `data/curated/property_data` directory.
 2. `property_lost_further_analysis.ipynb`: This notebook conducts a detailed analysis of the relationship between the frequency of property loss and the SA2 area in which the property is located. It also explores the correlation between these variables. The top SA2 areas with high crime frequency rates are identified.
 
+In terms of the **population & shopping centres & recreation** external dataset, please navigate to the `notebooks` directory and also run the `Data_download_pop_shopping_recreation` notebook to obtain all of related datasets.
+
+After downloading the data, remain in the `notebooks` directory and run the notebook:
+1. `SA2_EDA_pop_shopping_recreation`: This notebook processes the datasets as mentioned aboved and finds the relationships between rent and population, as well as shopping centres and recreations in a SA2 district. All processed external datasets are then stored in `data/curated/`.
+
 To answer the question **"Where are the most liveable and affordable suburbs in Victoria?"**, the following notebooks have been created and should be run in the specified order:
 1. `livability.ipynb`: In this notebook, we identify the most liveable suburbs in Victoria based on our livability metrics. The livable metric's index of the suburbs is stored in the `data/curated` directory.
 2. `affordability.ipynb`:
