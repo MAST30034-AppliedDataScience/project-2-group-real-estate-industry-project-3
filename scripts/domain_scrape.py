@@ -12,16 +12,30 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 DOMAIN_BASE_URL = 'https://www.domain.com.au'
+
+# Maximum number of pages in domain search
 DOMAIN_PAGE_LIMIT = 51
+
+# Postcodes for Victoria Metro
 MELBOURNE_POSTCODES = list(range(3000, 3200)) + [3800, 3801]
+
+# Directories to store scraped data and logs for effective parallel processing
 DATA_DIR = "../scrape_data"
 LOG_FILE = "../scrape_data/scraped_postcodes.txt"
+
+# Lock to avoid concurrent modification of log file by multiple threads
 LOG_LOCK = threading.Lock()
 
-MAX_THREADS = 5  # Adjust the number of threads based on your rate limit
+# Number of parallel threads executing
+MAX_THREADS = 5
 
 
 def get_properties_for_postcode(postcode):
+    """
+    Function to find all the properties listed on domain for a particular postcode
+    :param postcode
+    :return: URLs of listings in the postcode specified
+    """
     urls = []
 
     for page_i in range(1, DOMAIN_PAGE_LIMIT):
@@ -53,6 +67,11 @@ def get_properties_for_postcode(postcode):
 
 
 def scrape_property(property_url):
+    """
+    Scrape the details of a particular property
+    :param property_url: Domain URL of the property to scrape
+    :return: dictionary containing the scraped off data
+    """
     data = {}
 
     try:
@@ -132,6 +151,12 @@ def log_scraped_postcode(postcode):
 
 
 def scrape_and_save_postcode_data(postcode):
+    """
+    Scrape off search for a particular postcode, and scrape all the properties listed
+    Save the data to a JSON file, and log the postcode as scraped
+    :param postcode:
+    :return: None
+    """
     filename = os.path.join(DATA_DIR, f'properties_{postcode}.json')
 
     # Skip if the file already exists
@@ -156,6 +181,7 @@ def scrape_and_save_postcode_data(postcode):
 
 
 def scrape_all_postcodes_parallel():
+    """Scrape all postcodes in parallel, skipping any that have already been scraped."""
     scraped_postcodes = read_scraped_postcodes()
 
     postcodes_to_scrape = [postcode for postcode in MELBOURNE_POSTCODES if str(postcode) not in scraped_postcodes]
