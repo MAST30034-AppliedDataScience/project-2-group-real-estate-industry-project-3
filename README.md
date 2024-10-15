@@ -38,7 +38,18 @@ After downloading the data, remain in the `notebooks` directory and run the note
 In terms of the **population & shopping centres & recreation** external dataset, please navigate to the `notebooks` directory and also run the `Data_download_pop_shopping_recreation` notebook to obtain all of related datasets.
 
 After downloading the data, remain in the `notebooks` directory and run the notebook:
-1. `SA2_EDA_pop_shopping_recreation`: This notebook processes the datasets as mentioned aboved and finds the relationships between rent and population, as well as shopping centres and recreations in a SA2 district. All processed external datasets are then stored in `data/curated/`.
+1. `SA2_EDA_pop_shopping_recreation`: This notebook processes the datasets as mentioned above and finds the relationships between rent and population, as well as shopping centres and recreations in a SA2 district. All processed external datasets are then stored in `data/curated/`.
+
+In terms of the **public transport & hospitals** external dataset, please navigate to the `notebooks` directory and also run the `Data_Download_PTV_Hospitals` notebook to obtain all of related datasets.
+
+After downloading the data, remain in the `notebooks` directory and run the notebook:
+1. `Distance_Calculation_Train_Hosp_CBD.ipynb`: This notebook processes the datasets mentioned about and calculates the driviing distances of each property from the nearest train station and Melbourne CBD using the Open Route Services API. It also calculates the haversine distance of each property from its nearest hospital. We obtain the domain dataset with distances added and it is saved to `data/curated/final_train_hospital_cbd_dist_data`.
+
+To answer the first question, **What are the Most Important Internal and External Factors?**, the following notebooks have been created and should be run in the specified order:
+1. `combining_datasets.ipynb`: In this notebook we combine all our internal and external features to obtain the final dataset to test for feature importance.
+2. `Random_Forest_Regressor_Feature_Imp.ipynb`: In this notebook we implement a Random Forest Regression Model to find the feature importance metrics for each feature in order to determine the top 10.
+3. `XGBoost_Feature_Imp.ipynb`: In this notebook we implement an XGBoost model to find the feature importance metrics for each feature in order to determine the top 10.
+4. `Top_10_Features.ipynb`: In this notebook we find the averages of the importances for each feature and select the top 10 based on highest average importance across both the models.
 
 To answer the question **"Where are the most liveable and affordable suburbs in Victoria?"**, the following notebooks have been created and should be run in the specified order:
 1. `livability.ipynb`: In this notebook, we identify the most liveable suburbs in Victoria based on our livability metrics. The livable metric's index of the suburbs is stored in the `data/curated` directory.
