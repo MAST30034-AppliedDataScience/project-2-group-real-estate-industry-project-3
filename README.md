@@ -46,7 +46,7 @@ After downloading the data, remain in the `notebooks` directory and run the note
 1. `property_lost_sa2_matching.ipynb`: This notebook finds the corresponding sa2_name for each property lost incident, and shows the top sa2 areas where property lost frequency is the top and the least. The matching dataset is stored in the `data/curated/property_data` directory.
 2. `property_lost_further_analysis.ipynb`: This notebook conducts a detailed analysis of the relationship between the frequency of property loss and the SA2 area in which the property is located. It also explores the correlation between these variables. The top SA2 areas with high crime frequency rates are identified.
 
-In terms of the **schools** external dataset, please navigate to the `scripts` directory and also run the `school.py` script to obtain all of related datasets. 
+In terms of the **schools** external dataset, please navigate to the `notebooks` directory and also run the `school_download.ipynb` script to obtain all of related datasets. 
 
 After downloading the data, please navigate to the `notebooks` directory and run the notebooks in the specified order: 
 1. `school_zone.ipynb`: This notebook processes the school zone data. 
@@ -54,7 +54,7 @@ After downloading the data, please navigate to the `notebooks` directory and run
 2. `school_distance.ipynb`: This notebook calculates the distance between each property and the nearest school. It also visualizes the distribution of the distances and stores the processed data in the `data/curated/school_data.csv` file.
 
 
-In terms of the **income** external dataset, please navigate to the `scripts` directory and also run the `income.py` script to obtain all of related datasets.
+In terms of the **income** external dataset, please navigate to the `notebook` directory and also run the `income_download.ipynb` to obtain all of related datasets.
 
 After downloading the data, please navigate to the `notebooks` directory and run the notebooks in the specified order: 
 
