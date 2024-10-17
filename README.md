@@ -4,7 +4,11 @@ See the `scrape.py` file in the `scripts` directory to get started scraping data
 
 **Research Goal:** 
 
-**Timeline:** 
+Our primary research goal is to answer the following questions:
+1. What are the most important internal and external features in predicting rental prices? (This
+can be at the granularity of the groups’ choosing)
+2. What are the top 10 suburbs with the highest predicted growth rate?
+3. What are the most liveable and affordable suburbs according to your chosen metrics?
 
 ## Setup
 
