@@ -46,6 +46,21 @@ After downloading the data, remain in the `notebooks` directory and run the note
 1. `property_lost_sa2_matching.ipynb`: This notebook finds the corresponding sa2_name for each property lost incident, and shows the top sa2 areas where property lost frequency is the top and the least. The matching dataset is stored in the `data/curated/property_data` directory.
 2. `property_lost_further_analysis.ipynb`: This notebook conducts a detailed analysis of the relationship between the frequency of property loss and the SA2 area in which the property is located. It also explores the correlation between these variables. The top SA2 areas with high crime frequency rates are identified.
 
+In terms of the **schools** external dataset, please navigate to the `scripts` directory and also run the `school.py` script to obtain all of related datasets. 
+
+After downloading the data, please navigate to the `notebooks` directory and run the notebooks in the specified order: 
+1. `school_zone.ipynb`: This notebook processes the school zone data. 
+
+2. `school_distance.ipynb`: This notebook calculates the distance between each property and the nearest school. It also visualizes the distribution of the distances and stores the processed data in the `data/curated/school_data.csv` file.
+
+
+In terms of the **income** external dataset, please navigate to the `scripts` directory and also run the `income.py` script to obtain all of related datasets.
+
+After downloading the data, please navigate to the `notebooks` directory and run the notebooks in the specified order: 
+
+1. `income.ipynb`: This notebook preprocesses the income data and stores the processed data in the `../data/curated/income.parquet` file.
+
+
 In terms of the **population & shopping centres & recreation** external dataset, please navigate to the `notebooks` directory and also run the `Data_download_pop_shopping_recreation` notebook to obtain all of related datasets.
 
 After downloading the data, remain in the `notebooks` directory and run the notebook:
@@ -64,7 +79,7 @@ To answer the first question, **What are the Most Important Internal and Externa
 
 To answer the second question **"Where are the most liveable and affordable suburbs in Victoria?"**, the following notebooks have been created and should be run in the specified order:
 1. `livability.ipynb`: In this notebook, we identify the most liveable suburbs in Victoria based on our livability metrics. The livable metric's index of the suburbs is stored in the `data/curated` directory.
-2. `affordability.ipynb`: 
+2. `affordability.ipynb`: This notebook identifies the most affordable suburbs in Victoria based on our affordability metrics. The affordability metric's index of the suburbs is stored in the `data/curated` directory.
 3. `metropolitan_victoria`: This notebooks finds the postcode for each sa2 area in Victoria and select the suburbs that are metropolitan, which are used in `livability_affordability.ipynb` notebook for further area selection. The chosen sa2 areas are stored in the `data/curated` directory.
 4. `livability_affordability.ipynb`: This notebook combines both livability and affordability metrics with different weights assigned to each metric. A new index is generated to determine the most liveable and affordable suburbs in Victoria. The distribution of the livability, affordability, and combined index is also illustrated using geospatial visualizations.
 
