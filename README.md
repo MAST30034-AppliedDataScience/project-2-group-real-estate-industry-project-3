@@ -1,5 +1,12 @@
 # Generic Real Estate Consulting Project
 
+**Team Members:**
+- Anushka Pathak (1230592)
+- Elaine Zhang (1355970)
+- Koquiun Li Lin (1319881)
+- Hanshi Tang (1266337)
+- Daksh Agrawal (1340113)
+
 See the `scrape.py` file in the `scripts` directory to get started scraping data. 
 
 **Research Goal:** 
