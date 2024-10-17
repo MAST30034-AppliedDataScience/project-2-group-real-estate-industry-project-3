@@ -34,6 +34,7 @@ pip install -r requirements.txt
 ```
 
 ## Pipeline
+
 To Scrape the data off of https://www.domain.com.au/, run the `domain_scrape.py` script. This will create a `scraped_data` directory in the `data` directory. The script will scrape the data for all properties in Victoria and store the data in the `scrape_data` directory containing JSON files, postcode wise. To make the data interpretable, run these notebooks in the following order:
 1. `preprocess_domain_1.ipynb`: This notebook extracts the prices and other details, does basic imputation and attaches the SA2 area to each property and stores the data in `data/raw/domain.csv`.
 2. `preprocess_domain_2.ipynb`: This notebook does some type conversion and further imputation, outlier removal and stores the data in `data/curated/domain_data.csv`.
@@ -57,7 +58,6 @@ In terms of the **schools** external dataset, please navigate to the `notebooks`
 
 After downloading the data, please navigate to the `notebooks` directory and run the notebooks in the specified order: 
 1. `school_zone.ipynb`: This notebook processes the school zone data. 
-
 2. `school_distance.ipynb`: This notebook calculates the distance between each property and the nearest school. It also visualizes the distribution of the distances and stores the processed data in the `data/curated/school_data.csv` file.
 
 
@@ -97,3 +97,6 @@ To answer the third question **"What are the top 10 suburbs with the highest pre
 4. `time_series_rental_price.ipynb`: This notebook performs time series analysis on the historical data on a particular suburb to predict the future rental prices using ARIMA and SARIMA models, mainly to infer the appropriate parameters for the models for all suburbs.
 5. `time_series_rental_price_2.ipynb`: This notebook predicts the future rental prices for all suburbs in Victoria using ARIMA and SARIMA models. The predicted rental prices are stored in `data/curated/forecast_data.csv`.
 6. `time_series_rental_price_3.ipynb`: This notebook analyzes the predicted rental prices for all suburbs in Victoria and calculates the growth rate for each suburb. The top 10 suburbs with the highest predicted growth rate are identified and their behavior is visualized.
+
+
+To obtain a conclusive summary of our research process and findings, run the notebook `Summary_Notebook.ipynb` found in the `notebooks` directory.
