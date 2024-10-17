@@ -13,7 +13,9 @@ Python 3 dependencies:
 * Pyspark
 * Pandas, Numpy
 * Seaborn, matplotlib.pyplot
-* Scikit Learning
+* Scikit Learn
+* Beautiful Soup
+* statsmodels
 
 We provide a requirement.txt including all of the libraries used. Set up the environment by running:
 ```
@@ -21,6 +23,11 @@ pip install -r requirements.txt
 ```
 
 ## Pipeline
+To Scrape the data off of https://www.domain.com.au/, run the `domain_scrape.py` script. This will create a `scraped_data` directory in the `data` directory. The script will scrape the data for all properties in Victoria and store the data in the `scrape_data` directory containing JSON files, postcode wise. To make the data interpretable, run these notebooks in the following order:
+1. `preprocess_domain_1.ipynb`: This notebook extracts the prices and other details, does basic imputation and attaches the SA2 area to each property and stores the data in `data/raw/domain.csv`.
+2. `preprocess_domain_2.ipynb`: This notebook does some type conversion and further imputation, outlier removal and stores the data in `data/curated/domain_data.csv`.
+3. `eda_domain.ipynb`: This notebook provides an exploratory data analysis of the domain dataset, including visualizations of the distribution of rental prices, the number of bedrooms, bathrooms, parking etc.
+
 In terms of the **parks and reservation** external dataset, please navigate to the `notebooks` directory and run the `data_download_parkres_&_property_lost.ipynb` notebook to obtain all of related datasets.
 
 After downloading the data, remain in the `notebooks` directory and run the notebooks in the specified order:
@@ -56,3 +63,11 @@ To answer the question **"Where are the most liveable and affordable suburbs in 
 2. `affordability.ipynb`:
 3. `metropolitan_victoria`: This notebooks finds the postcode for each sa2 area in Victoria and select the suburbs that are metropolitan, which are used in `livability_affordability.ipynb` notebook for further area selection. The chosen sa2 areas are stored in the `data/curated` directory.
 4. `livability_affordability.ipynb`: This notebook combines both livability and affordability metrics with different weights assigned to each metric. A new index is generated to determine the most liveable and affordable suburbs in Victoria. The distribution of the livability, affordability, and combined index is also illustrated using geospatial visualizations.
+
+To answer the question **"What are the top 10 suburbs with the highest predicted growth rate?"**, the following notebooks and scripts have been created and should be run in the specified order:
+1. `historical.py`: This script downloads the historical data from the DFFH website and stores it in the `data/landing/historical` directory.
+2. `preprocess_historical.ipynb`: This notebook preprocesses the historical data and stores it in `data/raw/historical_data.csv`.
+3. `eda_historical.ipynb`: This notebook provides an exploratory data analysis of the historical data, including visualizations of the distribution of rental prices over time, slope calculation, and correlation analysis.
+4. `time_series_rental_price.ipynb`: This notebook performs time series analysis on the historical data on a particular suburb to predict the future rental prices using ARIMA and SARIMA models, mainly to infer the appropriate parameters for the models for all suburbs.
+5. `time_series_rental_price_2.ipynb`: This notebook predicts the future rental prices for all suburbs in Victoria using ARIMA and SARIMA models. The predicted rental prices are stored in `data/curated/forecast_data.csv`.
+6. `time_series_rental_price_3.ipynb`: This notebook analyzes the predicted rental prices for all suburbs in Victoria and calculates the growth rate for each suburb. The top 10 suburbs with the highest predicted growth rate are identified and their behavior is visualized.

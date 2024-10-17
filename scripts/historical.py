@@ -22,11 +22,3 @@ def download_file(url, local_path):
 url = 'https://www.dffh.vic.gov.au/moving-annual-rents-suburb-march-quarter-2023-excel'
 local_path = '../data/landing/historical_data.xlsx'
 download_file(url, local_path)
-
-url = "https://data.melbourne.vic.gov.au/api/v2/catalog/datasets/development-activity-monitor/exports/csv?delimiter=%2C"
-local_path = '../data/landing/development_activity.csv'
-download_file(url, local_path)
-
-url = "https://www.abs.gov.au/statistics/people/population/regional-population/2022-23/32180DS0003_2001-23.xlsx"
-local_path = '../data/landing/population_historical.xlsx'
-download_file(url, local_path)
