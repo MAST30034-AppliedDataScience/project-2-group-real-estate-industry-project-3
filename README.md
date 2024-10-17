@@ -62,13 +62,13 @@ To answer the first question, **What are the Most Important Internal and Externa
 3. `XGBoost_Feature_Imp.ipynb`: In this notebook we implement an XGBoost model to find the feature importance metrics for each feature in order to determine the top 10.
 4. `Top_10_Features.ipynb`: In this notebook we find the averages of the importances for each feature and select the top 10 based on highest average importance across both the models.
 
-To answer the question **"Where are the most liveable and affordable suburbs in Victoria?"**, the following notebooks have been created and should be run in the specified order:
+To answer the second question **"Where are the most liveable and affordable suburbs in Victoria?"**, the following notebooks have been created and should be run in the specified order:
 1. `livability.ipynb`: In this notebook, we identify the most liveable suburbs in Victoria based on our livability metrics. The livable metric's index of the suburbs is stored in the `data/curated` directory.
-2. `affordability.ipynb`:
+2. `affordability.ipynb`: 
 3. `metropolitan_victoria`: This notebooks finds the postcode for each sa2 area in Victoria and select the suburbs that are metropolitan, which are used in `livability_affordability.ipynb` notebook for further area selection. The chosen sa2 areas are stored in the `data/curated` directory.
 4. `livability_affordability.ipynb`: This notebook combines both livability and affordability metrics with different weights assigned to each metric. A new index is generated to determine the most liveable and affordable suburbs in Victoria. The distribution of the livability, affordability, and combined index is also illustrated using geospatial visualizations.
 
-To answer the question **"What are the top 10 suburbs with the highest predicted growth rate?"**, the following notebooks and scripts have been created and should be run in the specified order:
+To answer the third question **"What are the top 10 suburbs with the highest predicted growth rate?"**, the following notebooks and scripts have been created and should be run in the specified order:
 1. `historical.py`: This script downloads the historical data from the DFFH website and stores it in the `data/landing/historical` directory.
 2. `preprocess_historical.ipynb`: This notebook preprocesses the historical data and stores it in `data/raw/historical_data.csv`.
 3. `eda_historical.ipynb`: This notebook provides an exploratory data analysis of the historical data, including visualizations of the distribution of rental prices over time, slope calculation, and correlation analysis.
